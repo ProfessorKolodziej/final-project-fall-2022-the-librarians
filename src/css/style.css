@@ -3,9 +3,16 @@ h1{
 	text-transform: capitalize;
 	font-family: "Quakiez-Display";
 	font-size: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 p{
 	text-transform: capitalize;
+	font-family: 'Mermaid-Bold';
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @font-face {
@@ -17,6 +24,18 @@ p{
 		  url('/Fonts/Quakiez-Display.ttf')  format('truetype'), 
 		  url('/Fonts/Quakiez-Display.svg') format('svg'); 
 	  font-weight: 400;
+	  font-style: normal;
+	  font-display: swap;
+}
+@font-face{
+	font-family: 'Mermaid-Bold';
+	  src: url('/Mermaid-Bold.eot'),
+		url('/Mermaid-Bold.eot?#iefix') format('embedded-opentype'),
+		  url('/Mermaid-Bold.woff2') format('woff2'),
+		  url('/Mermaid-Bold.woff') format('woff'),
+		  url('/Mermaid-Bold.ttf')  format('truetype'), 
+		  url('/Mermaid-Bold.svg') format('svg'); 
+	  font-weight: 50;
 	  font-style: normal;
 	  font-display: swap;
 }
