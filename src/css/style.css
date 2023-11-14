@@ -1,20 +1,3 @@
-
-h1{
-	text-transform: capitalize;
-	font-family: "Quakiez-Display";
-	font-size: 250px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-p{
-	text-transform: capitalize;
-	font-family: 'Mermaid-Bold';
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 @font-face {
 	font-family: 'Quakiez-Display';
 	  src: url('/Fonts/Quakiez-Display.eot'),
@@ -39,6 +22,59 @@ p{
 	  font-style: normal;
 	  font-display: swap;
 }
+
+h1{
+	text-transform: capitalize;
+	text-align: center;
+	font-family: "Quakiez-Display";
+	font-size: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h2{
+	font-family:'Times New Roman', Times, serif;
+}
+h3{
+	font-family:'Times New Roman', Times, serif;
+}
+h4{
+	font-size: 150%;
+	font-family: 'Mermaid-Bold';
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+p{
+	text-align: center;
+}
+.header image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.background-info-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.background-info-2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.background-info-3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.background-info-4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 /* This uses the same value as --size-xs. */
