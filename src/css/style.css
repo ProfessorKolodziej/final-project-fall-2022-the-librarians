@@ -27,10 +27,11 @@ h1{
 	text-transform: capitalize;
 	text-align: center;
 	font-family: "Quakiez-Display";
-	font-size: 75px;
+	font-size: 65px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 h2{
 	font-family:'Times New Roman', Times, serif;
@@ -74,8 +75,6 @@ p{
 	justify-content: center;
 	align-items: center;
 }
-
-
 
 /* This uses the same value as --size-xs. */
 @media screen and (width >= 320px) {
