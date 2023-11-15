@@ -5,3 +5,49 @@
 // - Do not use onclick - use addEventListener instead
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
+
+// Create a token at https://airtable.com/create/tokens
+// with the read scope.
+// Generate your own API key - do not use mine.
+
+const API_KEY = 'patRdGCKj2RUuzQN7.36ebb41b1b6e258dbd24becf253674daa9a3b9ccfbc0b2afd6ea64e001c4f3ce';
+
+// The values below need to be customized for your table.
+// Learn how to find these at https://support.airtable.com/docs/finding-airtable-ids#finding-base-url-ids
+
+const baseId = 'appbESuLWfPuYXQGX';
+const tableId = 'tbldbOmlvXf1jKUm0';
+
+const apiUrl = `https://api.airtable.com/v0/${baseId}/${tableId}`;
+
+async function getAirtableData() {
+  const dataContainer = document.querySelector('#data');
+  const response = await fetch(apiUrl, {
+    headers: {
+        "Content-Type": "application/json",
+        "authorization": `Bearer ${API_KEY}`
+    },
+  })
+    .then(response => response.json())
+    .then((data) => {
+      // Check the console for the full object
+      console.log(data);
+      data.records.map((book) => {
+        const bookHTML = `
+        <li>
+          <h2>${book.fields.Name}</h2>
+          <p>${book.fields.Author}</p>
+          <img src=${book.fields['Cover Image'][0]['url']} />
+        </li>
+        `
+        dataContainer.insertAdjacentHTML('beforeend', bookHTML);
+      });
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+// Get the button
+const button = document.querySelector('#getdata');
+
+button.addEventListener('click', getAirtableData);
+getAirtableData();
