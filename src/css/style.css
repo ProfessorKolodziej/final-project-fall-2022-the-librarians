@@ -1,23 +1,23 @@
 @font-face {
 	font-family: 'Quakiez-Display';
-	  src: url('/Fonts/Quakiez-Display.eot'),
-		url('/Fonts/Quakiez-Display.eot?#iefix') format('embedded-opentype'),
-		  url('/Fonts/Quakiez-Display.woff2') format('woff2'),
-		  url('/Fonts/Quakiez-Display.woff') format('woff'),
-		  url('/Fonts/Quakiez-Display.ttf')  format('truetype'), 
-		  url('/Fonts/Quakiez-Display.svg') format('svg'); 
+	  src: url('/Fonts/Quakiez/Quakiez-Display.eot'),
+		url('/Fonts/Quakiez/Quakiez-Display.eot?#iefix') format('embedded-opentype'),
+		  url('/Fonts/Quakiez/Quakiez-Display.woff2') format('woff2'),
+		  url('/Fonts/Quakiez/Quakiez-Display.woff') format('woff'),
+		  url('/Fonts/Quakiez/Quakiez-Display.ttf')  format('truetype'), 
+		  url('/Fonts/Quakiez/Quakiez-Display.svg') format('svg'); 
 	  font-weight: 400;
 	  font-style: normal;
 	  font-display: swap;
 }
 @font-face{
 	font-family: 'Mermaid-Bold';
-	  src: url('/Mermaid-Bold.eot'),
-		url('/Mermaid-Bold.eot?#iefix') format('embedded-opentype'),
-		  url('/Mermaid-Bold.woff2') format('woff2'),
-		  url('/Mermaid-Bold.woff') format('woff'),
-		  url('/Mermaid-Bold.ttf')  format('truetype'), 
-		  url('/Mermaid-Bold.svg') format('svg'); 
+	  src: url('/Fonts/Mermaid/Mermaid-Bold.eot'),
+		url('/Fonts/Mermaid/Mermaid-Bold.eot?#iefix') format('embedded-opentype'),
+		  url('/Fonts/Mermaid/Mermaid-Bold.woff2') format('woff2'),
+		  url('/Fonts/Mermaid/Mermaid-Bold.woff') format('woff'),
+		  url('/Fonts/Mermaid/Mermaid-Bold.ttf')  format('truetype'), 
+		  url('/Fonts/Mermaid/Mermaid-Bold.svg') format('svg'); 
 	  font-weight: 50;
 	  font-style: normal;
 	  font-display: swap;
