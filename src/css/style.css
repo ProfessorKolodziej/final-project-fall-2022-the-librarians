@@ -23,7 +23,7 @@
 	  font-display: swap;
 }
 
-h1{
+.title {
 	text-transform: capitalize;
 	text-align: center;
 	font-family: "Quakiez-Display";
@@ -33,11 +33,34 @@ h1{
 	align-items: center;
 
 }
-h2{
+.subtext {
 	font-family:'Times New Roman', Times, serif;
 }
-h3{
+	
+.buttons {
 	font-family:'Times New Roman', Times, serif;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	color:black;
+}
+
+.librarybutton {
+	order: 1;
+	background-color: #FD7E14;
+	width: 80px;
+	text-align: center;
+  	 border-radius: 50px;
+   	font-size: 20px;
+  	padding: 10px;
+}
+.searchbutton {
+	order: 2;
+	background-color: #FD7E14;
+	width: 80px;
+	text-align: center;
+  	border-radius: 50px;
+   	font-size: 20px;
+  	padding: 10px;
 }
 h4{
 	font-size: 150%;
@@ -47,13 +70,11 @@ h4{
 	justify-content: center;
 	align-items: center;
 }
-p{
+.paragraphs {
 	text-align: center;
 }
 .header image{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	
 }
 .background-info-1{
 	display: flex;
@@ -83,6 +104,7 @@ p{
 		max-width: 768px;
 	}
 }
+
 
 /*use grid and reference datalibrary*/
 
