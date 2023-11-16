@@ -23,6 +23,8 @@
 	  font-display: swap;
 }
 
+
+
 .title {
 	text-transform: capitalize;
 	text-align: center;
@@ -49,7 +51,7 @@
 	background-color: #FD7E14;
 	width: 80px;
 	text-align: center;
-  	 border-radius: 50px;
+  	border-radius: 6.923px;
    	font-size: 20px;
   	padding: 10px;
 }
@@ -58,7 +60,7 @@
 	background-color: #FD7E14;
 	width: 80px;
 	text-align: center;
-  	border-radius: 50px;
+  	border-radius: 6.923px;
    	font-size: 20px;
   	padding: 10px;
 }
@@ -109,5 +111,104 @@ h4{
 /*use grid and reference datalibrary*/
 
 .datalibrary {
-	background-color: pink;
+	background-color: white;
+	text-align: center;
+}
+
+.librarytitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 31px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #000, /* Top-left shadow */
+			1px -1px 0 #000, /* Top-right shadow */
+			-1px 1px 0 #000, /* Bottom-left shadow */
+			1px 1px 0 #000; /* Bottom-right shadow */
+		}
+
+.librarysubtext {
+	display: block;
+	color: #000;
+	text-align: center;       
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.searchtitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 31px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #000, /* Top-left shadow */
+			1px -1px 0 #000, /* Top-right shadow */
+			-1px 1px 0 #000, /* Bottom-left shadow */
+			1px 1px 0 #000; /* Bottom-right shadow */
+}
+.searchbuttons {
+	font-family:'Times New Roman', Times, serif;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	color:black;
+	align: center;
+	justify-content: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 600px;
+/* text not fully centered */
+
+}
+
+.fictionbutton {
+	order: 1;
+	background-color: #20C997;
+	width: 105px;
+	text-align: center;
+  	border-radius: 6.923px;
+   	font-size: 15px;
+  	padding: 10px;
+	font-family: 'Inter', sans-serif;
+}
+
+.nonfictionbutton {
+	order: 1;
+	background-color: #20C997;
+	width: 105px;
+	text-align: center;
+  	 border-radius: 6.923px;
+   	font-size: 15px;
+  	padding: 10px;
+	font-family: 'Inter', sans-serif;
+}
+
+.searchimage {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
