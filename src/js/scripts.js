@@ -34,10 +34,13 @@ async function getAirtableData() {
       console.log(data);
       data.records.map((book) => {
         const bookHTML = `
-        <li>
-          <h2>${book.fields.Name}</h2>
-          <p>${book.fields.Author}</p>
-          <img src=${book.fields['Cover Image'][0]['url']} />
+        <li class="list">
+          <img class="librarybookimages" src=${book.fields['Cover Image'][0]['url']} />
+          <section class="card">
+            <h2>${book.fields.Name}</h2>
+            <p>${book.fields.Author}</p>
+            <p>${book.fields.Description}</p>
+          </section>
         </li>
         `
         dataContainer.insertAdjacentHTML('beforeend', bookHTML);
@@ -51,3 +54,4 @@ const button = document.querySelector('#getdata');
 
 button.addEventListener('click', getAirtableData);
 getAirtableData();
+

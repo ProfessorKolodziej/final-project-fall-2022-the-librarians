@@ -23,6 +23,10 @@
 	  font-display: swap;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+}
 
 
 .title {
@@ -54,6 +58,8 @@
   	border-radius: 6.923px;
    	font-size: 20px;
   	padding: 10px;
+	margin: 0 auto;
+
 }
 .searchbutton {
 	order: 2;
@@ -63,6 +69,7 @@
   	border-radius: 6.923px;
    	font-size: 20px;
   	padding: 10px;
+	margin: 0 auto;
 }
 h4{
 	font-size: 150%;
@@ -113,6 +120,11 @@ h4{
 .datalibrary {
 	background-color: white;
 	text-align: center;
+	list-style-type: none;
+	padding: 0px;
+	display: grid; 
+	grid-template-columns: repeat(4, 1fr);
+	
 }
 
 .librarytitle {
@@ -145,6 +157,20 @@ h4{
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+}
+
+.librarybookimages {
+	max-height: 120px;
+}
+.card {
+	border: 1px solid red;
+}
+.list .card {
+	opacity: 0;
+	transition: all .3s ease-in;
+}
+.list:hover .card {
+	opacity: 1;
 }
 
 .searchtitle {
@@ -190,6 +216,7 @@ h4{
    	font-size: 15px;
   	padding: 10px;
 	font-family: 'Inter', sans-serif;
+	margin: 0 auto;
 }
 
 .nonfictionbutton {
@@ -201,6 +228,7 @@ h4{
    	font-size: 15px;
   	padding: 10px;
 	font-family: 'Inter', sans-serif;
+	margin: 0 auto;
 }
 
 .searchimage {
