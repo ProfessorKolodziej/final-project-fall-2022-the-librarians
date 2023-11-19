@@ -22,12 +22,7 @@
 	  font-style: normal;
 	  font-display: swap;
 }
-.content-container{
-	background-image: url('src/images/Firefly create a dystopian, propaganda-ish art style relating to books and book burning with red-whi.jpg');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
+
 img {
 	display: block;
 	max-width: 100%;
@@ -36,60 +31,77 @@ img {
 	grid-gap: 10px;
 	justify-content: center;
 }
-.title {
-	text-transform: capitalize;
-	text-align: center;
-	font-family: "Quakiez-Display";
-	font-size: 65px;
-	display: grid;
-    grid-template-columns: 1fr; 
-	grid-gap: 10px;
-	justify-content: center;
+.content-container{
+	background-image: url('/src/images/burningbooks.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 90%;
+	height: 100vh;
 }
-.subtext {
-	font-family:'Times New Roman', Times, serif;
-}
-	
-.buttons {
-	font-family:'Times New Roman', Times, serif;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
-	justify-content: center;
-	color:black;
-}
+	.title {
+		text-transform: capitalize;
+		text-align: center;
+		font-family: "Quakiez-Display";
+		font-size: 65px;
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+		color: white;
+		background-color:black;
+	}
+	.subtext{
+		margin-top: -53.95px;
+		font-family:'Times New Roman', Times, serif;
+		background-color: white;
+		opacity: 70%;
+	}	
+	.buttons {
+		font-family:'Times New Roman', Times, serif;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+		justify-content: center;
+		color:black;
+	}
+		.librarybutton {
+			color: white;
+			order: 2;
+			background-color: #FD7E14;
+			background-color: black;
+			width: 80px;
+			text-align: center;
+			border-radius: 6.923px;
+			font-size: 20px;
+			padding: 10px;
+			margin: 0 auto;
+		}
+		.searchbutton {
+			color: white;
+			order: 1;
+			background-color: #FD7E14;
+			background-color: black;
+			width: 80px;
+			text-align: center;
+			border-radius: 6.923px;
+			font-size: 20px;
+			padding: 10px;
+			margin: 0 auto;
+		}
+		.historybutton {
+			color: white;
+			order: 3;
+			background-color: #FD7E14;
+			background-color: black;
+			width: 80px;
+			text-align: center;
+			border-radius: 6.923px;
+			font-size: 20px;
+			padding: 10px;
+			margin: 0 auto;
+		}
 
-.librarybutton {
-	order: 1;
-	background-color: #FD7E14;
-	width: 80px;
-	text-align: center;
-  	border-radius: 6.923px;
-   	font-size: 20px;
-  	padding: 10px;
-	margin: 0 auto;
-
-}
-.searchbutton {
-	order: 2;
-	background-color: #FD7E14;
-	width: 80px;
-	text-align: center;
-  	border-radius: 6.923px;
-   	font-size: 20px;
-  	padding: 10px;
-	margin: 0 auto;
-}
-.historybutton {
-	order: 1;
-	background-color: #FD7E14;
-	width: 80px;
-	text-align: center;
-  	border-radius: 6.923px;
-   	font-size: 20px;
-  	padding: 10px;
-	margin: 0 auto;
-}
 h2{
 	font-size: 150%;
 	font-family: 'Mermaid-Bold';
@@ -112,33 +124,33 @@ h2{
 .paragraphs {
 	text-align: center;
 }
-.background-info-1{
-	display: grid;
-    grid-template-columns: 1fr; 
-	grid-gap: 10px;
-	justify-content: center;
-	align-items: center;
-}
-.background-info-2{
-	display: grid;
-    grid-template-columns: 1fr; 
-	grid-gap: 10px;
-	justify-content: center;
-	align-items: center;
-}
-.background-info-3{
-	display: grid;
-    grid-template-columns: 1fr; 
-	grid-gap: 10px;
-	justify-content: center;
-	align-items: center;
-}
-.background-info-4{
-	display: grid;
-    grid-template-columns: 1fr; 
-	grid-gap: 10px;
-	justify-content: center;
-}
+	.background-info-1{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.background-info-2{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.background-info-3{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.background-info-4{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+	}
 
 /* This uses the same value as --size-xs. */
 @media screen and (width >= 320px) {
