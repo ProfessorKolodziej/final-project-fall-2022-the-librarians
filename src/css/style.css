@@ -40,7 +40,7 @@ img {
 	height: 100vh;
 }
 	.title {
-		text-transform: capitalize;
+		text-transform: uppercase;
 		text-align: center;
 		font-family: "Quakiez-Display";
 		font-size: 65px;
@@ -218,7 +218,14 @@ h2{
 .list:hover .card {
 	opacity: 1;
 }
-
+.searchpagebuttons{
+	background-image: url('/src/images/bookcollage.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 90%;
+	height: 100vh;	
+}
 .searchtitle {
 	flex-shrink: 0;
 	color: #DC3545;
@@ -243,46 +250,64 @@ h2{
 	font-family:'Times New Roman', Times, serif;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
 	color:black;
 	align-content: center;
 	justify-content: center;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-top: 600px;
-/* text not fully centered */
-
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 200px;
 }
-
+	@media (min-width: 768px) {
+		.searchbuttons{
+			margin-top: 300px;
+		}
+		}
 .fictionbutton {
 	order: 1;
-	background-color: #20C997;
-	width: 105px;
-	text-align: center;
-  	border-radius: 6.923px;
-   	font-size: 15px;
-  	padding: 10px;
-	font-family: 'Inter', sans-serif;
-	margin: 0 auto;
-}
-
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		}
+	  }
 .nonfictionbutton {
-	order: 1;
-	background-color: #20C997;
-	width: 105px;
+	order: 2;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
 	text-align: center;
-  	 border-radius: 6.923px;
-   	font-size: 15px;
-  	padding: 10px;
-	font-family: 'Inter', sans-serif;
-	margin: 0 auto;
-}
-
-.searchimage {
-	background-size: cover;
-	background-position: center;
+	background-color: white;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
 	position: relative;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	user-select: auto;
+	-webkit-user-select: none;
+	touch-action: manipulation;
 }
+	@media (min-width: 768px) {
+		.nonfictionbutton{
+		padding: 0.25em 0.75em;
+		}
+	}
