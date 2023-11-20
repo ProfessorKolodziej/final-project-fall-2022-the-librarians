@@ -65,41 +65,62 @@ img {
 		justify-content: center;
 		color:black;
 	}
-		.librarybutton {
-			color: white;
-			order: 2;
-			background-color: #FD7E14;
-			background-color: black;
-			width: 80px;
-			text-align: center;
-			border-radius: 6.923px;
-			font-size: 20px;
-			padding: 10px;
-			margin: 0 auto;
-		}
-		.searchbutton {
-			color: white;
-			order: 1;
-			background-color: #FD7E14;
-			background-color: black;
-			width: 80px;
-			text-align: center;
-			border-radius: 6.923px;
-			font-size: 20px;
-			padding: 10px;
-			margin: 0 auto;
-		}
-		.historybutton {
-			color: white;
+	.librarybutton {
+		order: 2;
+		font-family: "Open Sans", sans-serif;
+		font-size: 20px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+		color: #000;
+		cursor: pointer;
+		border: 3px solid;
+		padding: 0.25em 0.5em;
+		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		position: relative;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+	.searchbutton {
+		order: 1;
+		font-family: "Open Sans", sans-serif;
+		font-size: 20px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+		color: #000;
+		cursor: pointer;
+		border: 3px solid;
+		padding: 0.25em 0.5em;
+		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		position: relative;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+	.historybutton {
 			order: 3;
-			background-color: #FD7E14;
-			background-color: black;
-			width: 80px;
-			text-align: center;
-			border-radius: 6.923px;
+			font-family: "Open Sans", sans-serif;
 			font-size: 20px;
-			padding: 10px;
-			margin: 0 auto;
+			letter-spacing: 2px;
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: white;
+			color: #000;
+			cursor: pointer;
+			border: 3px solid;
+			padding: 0.25em 0.5em;
+			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+			position: relative;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
 		}
 
 h2{
