@@ -173,14 +173,6 @@ h2{
 		justify-content: center;
 	}
 
-/* This uses the same value as --size-xs. */
-@media screen and (width >= 320px) {
-	.content-container {
-		margin: 0 auto;
-		max-width: 768px;
-	}
-}
-
 
 /*use grid and reference datalibrary*/
 
@@ -286,6 +278,7 @@ h2{
 		}
 .fictionbutton {
 	order: 1;
+	display: block;
 	  font-family: "Open Sans", sans-serif;
 	  font-size: 24px;
 	  letter-spacing: 2px;
