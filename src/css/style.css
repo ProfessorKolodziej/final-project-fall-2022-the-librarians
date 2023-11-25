@@ -1,3 +1,4 @@
+/*---------------------------fonts---------------------------*/
 @font-face {
 	font-family: 'Quakiez-Display';
 	  src: url('/Fonts/Quakiez/Quakiez-Display.eot'),
@@ -39,6 +40,10 @@ img {
 	opacity: 90%;
 	height: 100vh;
 }
+/*---------------------------end section---------------------------------*/
+
+
+/*--------------------------Index/Home---------------------------*/
 	.title {
 		text-transform: uppercase;
 		text-align: center;
@@ -145,6 +150,10 @@ h2{
 .paragraphs {
 	text-align: center;
 }
+/*---------------------------end section---------------------------------*/
+
+
+/*---------------------------Background info. page---------------------------*/
 	.background-info-1{
 		display: grid;
 		grid-template-columns: 1fr; 
@@ -173,7 +182,10 @@ h2{
 		justify-content: center;
 	}
 
+/*---------------------------end section---------------------------------*/
 
+
+/*---------------------------Library page---------------------------*/
 /*use grid and reference datalibrary*/
 
 .datalibrary {
@@ -236,6 +248,11 @@ h2{
 .list:hover .card {
 	opacity: 1;
 }
+/*---------------------------end section---------------------------------*/
+
+
+
+/*---------------------------General SEARCH page---------------------------*/
 .searchpagebuttons{
 	background-image: url('/src/images/bookcollage.jpg');
 	background-size: cover;
@@ -330,3 +347,76 @@ h2{
 		padding: 0.25em 0.75em;
 		}
 	}
+
+/*---------------------------end section---------------------------------*/
+
+
+
+/*---------------------------Fiction SEARCH page---------------------------*/
+
+
+.fictionsearchtitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0px;
+	padding-top: 60px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #ffffff, /* Top-left shadow */
+			1px -1px 0 #ffffff, /* Top-right shadow */
+			-1px 1px 0 #ffffff, /* Bottom-left shadow */
+			1px 1px 0 #ffffff; /* Bottom-right shadow */
+	background-color: black;
+		}
+
+/*---------------------------end section---------------------------------*/
+
+
+
+/*---------------------------NF SEARCH page---------------------------*/
+
+
+.nfsearchtitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0px;
+	padding-top: 60px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #ffffff, /* Top-left shadow */
+			1px -1px 0 #ffffff, /* Top-right shadow */
+			-1px 1px 0 #ffffff, /* Bottom-left shadow */
+			1px 1px 0 #ffffff; /* Bottom-right shadow */
+	background-color: black;
+		}
+
+.nfboxes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	font-size: 20px;
+	font-style: normal;
+	line-height: normal;
+}
+
+.nffirstchecks {
+	order: 1;
+}
+
+.nfsecondchecks {
+	order: 2;
+}
