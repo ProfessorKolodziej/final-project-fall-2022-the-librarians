@@ -228,9 +228,14 @@ h2{
 
 .librarybookimages {
 	max-height: 120px;
+	position: absolute;
 }
 .card {
-	border: 1px solid red;
+/*asked ChatGPT how to use absolute and relative positioning in CSS*/
+	border: 1px solid rgb(0, 234, 255);
+	position: relative;
+	top: -70px;
+	background-color: rgb(122, 228, 228);
 }
 .list .card {
 	opacity: 0;
