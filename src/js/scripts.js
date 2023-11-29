@@ -18,7 +18,7 @@ const API_KEY = 'patRdGCKj2RUuzQN7.36ebb41b1b6e258dbd24becf253674daa9a3b9ccfbc0b
 const baseId = 'appbESuLWfPuYXQGX';
 const tableId = 'tbldbOmlvXf1jKUm0';
 
-const apiUrl = `https://api.airtable.com/v0/${baseId}/${tableId}`;
+const apiUrl = `https://api.airtable.com/v0/${baseId}/${tableId}?filterByFormula=Genres="Fiction"`;
 
 async function getAirtableData() {
   const dataContainer = document.querySelector('#data');
