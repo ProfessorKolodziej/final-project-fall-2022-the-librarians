@@ -33,7 +33,7 @@ img {
 	justify-content: center;
 }
 .content-container{
-	background-image: url('/src/images/burningbooks.jpg');
+	background-image: url('/images/burningbooks.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
