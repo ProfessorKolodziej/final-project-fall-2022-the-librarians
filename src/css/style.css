@@ -254,26 +254,28 @@ h2{
 
 /*---------------------------General SEARCH page---------------------------*/
 .searchpagebuttons{
-	background-image: url('/src/images/gianteye.jpg');
+	background-image: url('/images/gianteye.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	opacity: 90%;
 	height: 100vh;	
+	padding-top: 100px;
 }
 .searchtitle {
 	flex-shrink: 0;
-	color: #DC3545;
+	color: black;
 	text-align: center;
 /* font family issues, font won't change */
 	font-family: 'Inter';
-	font-size: 40px;
+	font-size: 70px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
 	margin-left: 20px;
 	margin-right: 20px;
-	margin-top: 31px;
+	margin-top: 20px;
+
 	/*asked ChatGPT how to outline text in CSS*/
 	text-shadow: 
 			-1px -1px 0 #000, /* Top-left shadow */
