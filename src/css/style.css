@@ -374,6 +374,71 @@ h2{
 	background-color: black;
 		}
 
+.fictionendbuttons {
+		font-family:'Times New Roman', Times, serif;
+		display: flex;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		color:black;
+		align-content: center;
+		justify-content: center;
+		margin-top: 200px;
+		}
+
+.fictionhomebutton {
+	order: 1;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+.fictionresultsbutton {
+	order: 1;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+
+
 /*---------------------------end section---------------------------------*/
 
 
@@ -405,14 +470,88 @@ h2{
 .nfboxes {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-}
+} 
+.fictionsearchtitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0px;
+	padding-top: 60px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #ffffff, /* Top-left shadow */
+			1px -1px 0 #ffffff, /* Top-right shadow */
+			-1px 1px 0 #ffffff, /* Bottom-left shadow */
+			1px 1px 0 #ffffff; /* Bottom-right shadow */
+	background-color: black;
+		}
 
-.nffirstchecks {
+.nfendbuttons {
+		font-family:'Times New Roman', Times, serif;
+		display: flex;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		color:black;
+		align-content: center;
+		justify-content: center;
+		margin-top: 200px;
+		}
+
+.nfhomebutton {
 	order: 1;
-}
-
-.nfsecondchecks {
-
-
-
-}
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+.nfresultsbutton {
+	order: 1;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
