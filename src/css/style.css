@@ -254,7 +254,7 @@ h2{
 
 /*---------------------------General SEARCH page---------------------------*/
 .searchpagebuttons{
-	background-image: url('/src/images/gianteye.jpg');
+	background-image: url('/images/gianteye.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
