@@ -266,7 +266,7 @@ h2{
 	color: #DC3545;
 	text-align: center;
 /* font family issues, font won't change */
-	font-family: 'Inter', sans-serif;
+	font-family: 'Inter';
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 700;
@@ -283,24 +283,18 @@ h2{
 }
 .searchbuttons {
 	font-family:'Times New Roman', Times, serif;
-	display: grid;
+	display: flex;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 10px;
 	color:black;
 	align-content: center;
 	justify-content: center;
-	padding-left: 5px;
-	padding-right: 5px;
 	margin-top: 200px;
 }
-	@media (min-width: 768px) {
-		.searchbuttons{
-			margin-top: 300px;
-		}
-		}
+
 .fictionbutton {
 	order: 1;
-	display: block;
+	display: inline-block;
 	  font-family: "Open Sans", sans-serif;
 	  font-size: 24px;
 	  letter-spacing: 2px;
@@ -321,10 +315,13 @@ h2{
 	@media (min-width: 768px) {
 		.fictionbutton{
 		  padding: 0.25em 0.75em;
+		  max-width: 40%;
 		}
 	  }
 .nonfictionbutton {
 	order: 2;
+	display: inline-block;
+	justify-content: center;
 	font-family: "Open Sans", sans-serif;
 	font-size: 24px;
 	letter-spacing: 2px;
@@ -345,6 +342,7 @@ h2{
 	@media (min-width: 768px) {
 		.nonfictionbutton{
 		padding: 0.25em 0.75em;
+		max-width: 40%;
 		}
 	}
 
@@ -414,5 +412,7 @@ h2{
 }
 
 .nfsecondchecks {
+
+	
 
 }
