@@ -18,7 +18,21 @@ const API_KEY = 'patRdGCKj2RUuzQN7.36ebb41b1b6e258dbd24becf253674daa9a3b9ccfbc0b
 const baseId = 'appbESuLWfPuYXQGX';
 const tableId = 'tbldbOmlvXf1jKUm0';
 
-const apiUrl = `https://api.airtable.com/v0/${baseId}/${tableId}?filterByFormula=Genres="Fiction"`;
+// Look for any items with the "Fiction" tag in Genres field.
+const lookForGenreNF = `SEARCH("Nonfiction",Genres)`;
+const lookForGenre = `SEARCH("Fiction",Genres)`;
+
+// Look for any items with "Harper" text in Author field.
+const lookForAuthor = `SEARCH("Harper",Author)`;
+
+// Look for items that match one of genre OR author field text.
+const requireSome = `OR(${lookForGenre}, ${lookForAuthor})`;
+
+// Look for items that match BOTH genre and author field text.
+const requireAll = `AND(${lookForGenre}, ${lookForAuthor})`;
+
+// Choose the filterByFormula you want - lookForGenre, lookForAuthor, requireSome, or requireAll.
+const apiUrl = `https://api.airtable.com/v0/${baseId}/${tableId}?filterByFormula=${encodeURI(lookForGenre)}`;
 
 async function getAirtableData() {
   const dataContainer = document.querySelector('#data');
@@ -52,6 +66,13 @@ async function getAirtableData() {
 // Get the button
 const button = document.querySelector('#getdata');
 
-button.addEventListener('click', getAirtableData);
-getAirtableData();
+
+  if (button !== null){
+    button.addEventListener('click', getAirtableData);
+    getAirtableData();
+  }
+
+//ID goes in pound sign//
+const resultsbutton = document.querySelector('#fictionresultsbutton');
+resultsbutton.addEventListener('click', getAirtableData);
 

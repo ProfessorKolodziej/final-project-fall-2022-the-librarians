@@ -196,6 +196,8 @@ h2{
 	padding: 0px;
 	display: grid; 
 	grid-template-columns: repeat(4, 1fr);
+	max-width: 700px;
+	gap: 50px;
 	
 }
 
@@ -231,14 +233,18 @@ h2{
 	line-height: normal;
 }
 
+.list {
+	position: relative;
+}
+
 .librarybookimages {
 	max-height: 120px;
-	position: absolute;
+	position: relative;
 }
 .card {
 /*asked ChatGPT how to use absolute and relative positioning in CSS*/
 	border: 1px solid rgb(0, 234, 255);
-	position: relative;
+	position: absolute;
 	top: -70px;
 	background-color: rgb(122, 228, 228);
 }
@@ -246,9 +252,18 @@ h2{
 	opacity: 0;
 	transition: all .3s ease-in;
 }
+
 .list:hover .card {
 	opacity: 1;
 }
+.results .card {
+	opacity: 1;
+	background-color: transparent;
+	position: static;
+	display: none;
+
+}
+
 /*---------------------------end section---------------------------------*/
 
 
@@ -441,6 +456,7 @@ h2{
 		}
 	  }
 
+	
 
 /*---------------------------end section---------------------------------*/
 
