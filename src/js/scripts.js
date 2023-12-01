@@ -76,3 +76,7 @@ const button = document.querySelector('#getdata');
 const resultsbutton = document.querySelector('#fictionresultsbutton');
 resultsbutton.addEventListener('click', getAirtableData);
 
+const secondresultsbutton = document.querySelector('#nfresultsbutton');
+secondresultsbutton.addEventListener('click', getAirtableData);
+
+

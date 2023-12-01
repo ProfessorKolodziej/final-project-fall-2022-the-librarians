@@ -12,26 +12,46 @@
     <section>
             <h1 class="nfsearchtitle">NONFICTION</h1>
             <h2 class="nfsearchsubtitle">What genres are you interested in?</h2>
-                <label for="accept">
-                    <div class="nfboxes">
-                        <div class="nffirstchecks">
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Memoir 
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Race 
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Religion  
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Feminism 
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Philosophical 
-                        </div>
-                        <div class="nfsecondchecks">
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Political 
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Historical
-                            <input type="checkbox" id="accept" name="accept" value="yes"> LGBTQIA+
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Autobiography
-                            <input type="checkbox" id="accept" name="accept" value="yes"> Modern 
-                        </div>
-                    </div>
-                </label>
+                <div class="nfboxes">
+                    <label for="Memoir">
+                        <input type="checkbox" id="Memoir" name="Fantasy" value="yes"> Memoir 
+                    </label>
+                    <label for="Race">
+                        <input type="checkbox" id="Race" name="Race" value="yes"> Race 
+                    </label>
+                    <label for="Religion">
+                        <input type="checkbox" id="Religion" name="Religion" value="yes"> Religion  
+                    </label>
+                    <label for="Feminism">
+                        <input type="checkbox" id="Feminism" name="Feminism" value="yes"> Feminism 
+                    </label>
+                    <label for="Philosophical">
+                        <input type="checkbox" id="Philosophical" name="Philosophical" value="yes"> Philosophical 
+                    </label>
+                    <label for="Political">
+                        <input type="checkbox" id="Political" name="Political" value="yes"> Political 
+                    </label>
+                    <label for="Historical">
+                        <input type="checkbox" id="Historical" name="Historical" value="yes"> Historical
+                    </label>
+                    <label for="LGBTQIA+">
+                        <input type="checkbox" id="LGBTQIA" name="LGBTQIA" value="yes"> LGBTQIA+
+                    </label>
+                    <label for="Sci-fi">
+                        <input type="checkbox" id="Autobiography" name="Autobiography" value="yes"> Autobiography
+                    </label>
+                    <label for="Modern">
+                        <input type="checkbox" id="Modern" name="Modern" value="yes"> Modern 
+                    </label>
+                </div>
+                <div>
+                    <ul id="data" class="datalibrary results">
+                    </ul>
+                </div>
                 <div class="nfendbuttons">
                     <h3 class="nfhomebutton"><a href="index.html">HOME</a></h3>
-                    <h3 class="nfresultsbutton"><a href="nonfictionsearchresult.html">RESULTS</a></h3>
+                    <h3><button id="nfresultsbutton">RESULTS</button></h3>
                 </div>
     </section>
+    <script src="js/scripts.js"></script> 
+</body>
