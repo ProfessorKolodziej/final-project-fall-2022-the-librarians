@@ -80,3 +80,9 @@ const secondresultsbutton = document.querySelector('#nfresultsbutton');
 secondresultsbutton.addEventListener('click', getAirtableData);
 
 
+document.addEventListener("click", function( event ) {
+  console.log(event.target);
+  if ( event.target.classList.contains('button-class') ) {
+      alert(event.target.innerText);
+  } 
+})
