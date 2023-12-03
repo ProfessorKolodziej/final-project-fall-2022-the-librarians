@@ -44,19 +44,21 @@ img {
 
 
 /*--------------------------Index/Home---------------------------*/
-	.title {
-		text-transform: uppercase;
-		text-align: center;
-		font-family: "Quakiez-Display";
-		font-size: 65px;
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-		color: white;
-		background-color:black;
-		margin-top: 0px;
-	}
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Quakiez-Display";
+	font-size: 65px;
+	display: grid;
+	grid-template-columns: 1fr; 
+	grid-gap: 10px;
+	justify-content: center;
+	color: white;
+	background-color:black;
+	margin-top: 0px;
+}
+
+
 	.subtext{
 		margin-top: -53.95px;
 		font-family:'Times New Roman', Times, serif;
@@ -279,12 +281,14 @@ h2{
 	height: 100vh;	
 	padding-top: 100px;
 }
+
+
 .searchtitle {
 	flex-shrink: 0;
-	color: black;
+	color: white;
 	text-align: center;
 /* font family issues, font won't change */
-	font-family: 'Inter';
+	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 70px;
 	font-style: normal;
 	font-weight: 700;
@@ -364,6 +368,35 @@ h2{
 		max-width: 40%;
 		}
 	}
+
+	.searchhomebutton{
+		display: inline-block;
+		justify-content: center;
+		align-items: center;
+		font-family: "Open Sans", sans-serif;
+		font-size: 24px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+		color: #000;
+		cursor: pointer;
+		border: 3px solid;
+		padding: 0.25em 0.5em;
+		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		position: relative;
+		user-select: auto;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+		@media (min-width: 768px) {
+			.searchhomebutton{
+			padding: 0.25em 0.75em;
+			max-width: 40%;
+			}
+		}
+
 
 /*---------------------------end section---------------------------------*/
 
