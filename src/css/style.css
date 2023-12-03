@@ -69,12 +69,13 @@ img {
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 10px;
 		justify-content: center;
+		place-items: center;
 		color:black;
 	}
 	.librarybutton {
 		order: 2;
 		font-family: "Open Sans", sans-serif;
-		font-size: 20px;
+		font-size: 18px;
 		letter-spacing: 2px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -93,7 +94,7 @@ img {
 	.searchbutton {
 		order: 1;
 		font-family: "Open Sans", sans-serif;
-		font-size: 20px;
+		font-size: 18px;
 		letter-spacing: 2px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -112,7 +113,7 @@ img {
 		.historybutton {
 			order: 3;
 			font-family: "Open Sans", sans-serif;
-			font-size: 20px;
+			font-size: 18px;
 			letter-spacing: 2px;
 			text-decoration: none;
 			text-transform: uppercase;
