@@ -77,12 +77,27 @@ const resultsbutton = document.querySelector('#fictionresultsbutton');
 resultsbutton.addEventListener('click', getAirtableData);
 
 const secondresultsbutton = document.querySelector('#nfresultsbutton');
-secondresultsbutton.addEventListener('click', getAirtableData);
+
+if (secondresultsbutton !== null){
+  secondresultsbutton.addEventListener('click', getAirtableData);
+}
+
+const checkboxes = document.querySelector('#fictionboxes');
+
+let checked = [];
+if (checkboxes !== null){
+  checkboxes.addEventListener("click", function( event ) {  
+    console.log(event.target);
+    if ( event.target.tagName === "INPUT") {
+        checked.push(event.target.id)
+        alert(checked);
+      if (checkboxes == null{
+        
+      }
+        }
+    } 
+  })
+}
 
 
-document.addEventListener("click", function( event ) {
-  console.log(event.target);
-  if ( event.target.classList.contains('button-class') ) {
-      alert(event.target.innerText);
-  } 
-})
+

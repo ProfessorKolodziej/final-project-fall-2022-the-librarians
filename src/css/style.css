@@ -201,7 +201,10 @@ h2{
 	grid-template-columns: repeat(4, 1fr);
 	max-width: 700px;
 	gap: 50px;
-	
+	@media (min-width: 1024px) {
+		
+	}
+
 }
 
 .librarytitle {
@@ -223,7 +226,18 @@ h2{
 			1px -1px 0 #000, /* Top-right shadow */
 			-1px 1px 0 #000, /* Bottom-left shadow */
 			1px 1px 0 #000; /* Bottom-right shadow */
-		}
+		
+	
+	@media (min-width: 1024px) {
+		font-size: 60px;
+		text-shadow: 
+			-2px -2px 0 #000, /* Top-left shadow */
+			2px -2px 0 #000, /* Top-right shadow */
+			-2px 2px 0 #000, /* Bottom-left shadow */
+			2px 2px 0 #000; /* Bottom-right shadow */
+		margin-bottom: 20px;
+	}
+}
 
 .librarysubtext {
 	display: block;
@@ -234,22 +248,49 @@ h2{
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	@media (min-width: 1024px) {
+		font-size: 30px;
+	}
+	
 }
 
 .list {
 	position: relative;
+	@media (min-width: 760px) {
+        justify-content: center;
+		
 }
+
+
+}
+
+.getdatabutton {
+	margin-top: 100px;
+
+}
+.card {
+	/*asked ChatGPT how to use absolute and relative positioning in CSS*/
+		border: 1px solid black;
+		position: absolute;
+		top: -70px;
+		background-color: white;
+		width: 300px;
+		@media (min-width: 760px) {
+			align-content: center;
+	}
+	
+	}
 
 .librarybookimages {
 	max-height: 120px;
 	position: relative;
+	@media (min-width: 760px) {
+		align-content: center;
 }
-.card {
-/*asked ChatGPT how to use absolute and relative positioning in CSS*/
-	border: 1px solid rgb(0, 234, 255);
-	position: absolute;
-	top: -70px;
-	background-color: rgb(122, 228, 228);
+	@media (min-width: 1024px) {
+		max-height: 200px;
+	}	
+
 }
 .list .card {
 	opacity: 0;
@@ -425,6 +466,21 @@ h2{
 			1px 1px 0 #ffffff; /* Bottom-right shadow */
 	background-color: black;
 		}
+	
+.fictionsearchsubtitle {
+	font-family :'Mermaid', sans-serif;
+	font-size: 25px;
+	color: black;
+
+
+}
+.fictionboxes {
+	font-size: 25px;
+	font-family :'Mermaid', sans-serif;
+	display: grid;
+	gap: 20px;
+	padding-top: 30px;
+}
 
 .fictionendbuttons {
 		font-family:'Times New Roman', Times, serif;
@@ -751,3 +807,15 @@ h2{
 	  }
 
 /*---------------------------end section---------------------------------*/
+
+/* media queries
+@media (min-width: 760px) {
+		padding-top: 30px;
+		font-size: 60px;
+	}
+	@media (min-width: 1024px) {
+		font-size: 80px;
+		padding-top: 68px;
+		text-align: right;
+	}
+	*/
