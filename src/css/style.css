@@ -476,11 +476,61 @@ h2{
 }
 .fictionboxes {
 	font-size: 25px;
-	font-family :'Mermaid', sans-serif;
-	display: grid;
+	font-family :'Baskerville', sans-serif;
+	margin: 0;
+	display: flex;
+	align-items: center;
 	gap: 20px;
-	padding-top: 30px;
+	padding-top: 15px;
+	max-width: 50%;
+	
 }
+
+	.fictionboxes input[type="checkbox"] {
+		display: none;
+		visibility: hidden;
+	}
+
+	.fictionboxes label {
+		position: relative;
+		padding-left: 2em;
+		padding-right: 1em;
+		line-height: 2;
+		cursor: pointer;
+		display: inline-flex;
+	}
+
+	.fictionboxes label:before {
+		box-sizing: border-box;
+		content: " ";
+		position: absolute;
+		top: 0.3em;
+		left: 0;
+		display: block;
+		width: 1.4em;
+		height: 1.4em;
+		border: 2px solid #9098A9;
+		border-radius: 6px;
+		z-index: -1;
+	}
+
+	.fictionboxes input[type=checkbox]:checked + label {
+		padding-left: 1em;
+		color: #0f5229;
+	}
+	.fictionboxes input[type=checkbox]:checked + label:before {
+		top: 0;
+		width: 100%;
+		height: 2em;
+		background: #b7e6c9;
+		border-color: #2cbc63;
+	}
+
+	.fictionboxes label,
+	.fictionboxes label::before {
+		transition: 0.25s all ease;
+	}
+/* Foundational CSS courtesy of Raul Berrera, adjusted to fit our project*/
 
 .fictionendbuttons {
 		font-family:'Times New Roman', Times, serif;
@@ -651,6 +701,51 @@ h2{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 } 
+
+.fictionboxes input[type="checkbox"] {
+	display: none;
+	visibility: hidden;
+}
+
+.fictionboxes label {
+	position: relative;
+	padding-left: 2em;
+	padding-right: 1em;
+	line-height: 2;
+	cursor: pointer;
+	display: inline-flex;
+}
+
+.fictionboxes label:before {
+	box-sizing: border-box;
+	content: " ";
+	position: absolute;
+	top: 0.3em;
+	left: 0;
+	display: block;
+	width: 1.4em;
+	height: 1.4em;
+	border: 2px solid #9098A9;
+	border-radius: 6px;
+	z-index: -1;
+}
+
+.fictionboxes input[type=checkbox]:checked + label {
+	padding-left: 1em;
+	color: #0f5229;
+}
+.fictionboxes input[type=checkbox]:checked + label:before {
+	top: 0;
+	width: 100%;
+	height: 2em;
+	background: #b7e6c9;
+	border-color: #2cbc63;
+}
+
+.fictionboxes label,
+.fictionboxes label::before {
+	transition: 0.25s all ease;
+}
 .fictionsearchtitle {
 	flex-shrink: 0;
 	color: #DC3545;
