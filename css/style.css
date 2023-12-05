@@ -1,0 +1,871 @@
+/*---------------------------fonts---------------------------*/
+@font-face {
+	font-family: 'Quakiez-Display';
+	  src: url('/Fonts/Quakiez/Quakiez-Display.eot'),
+		url('/Fonts/Quakiez/Quakiez-Display.eot?#iefix') format('embedded-opentype'),
+		  url('/Fonts/Quakiez/Quakiez-Display.woff2') format('woff2'),
+		  url('/Fonts/Quakiez/Quakiez-Display.woff') format('woff'),
+		  url('/Fonts/Quakiez/Quakiez-Display.ttf')  format('truetype'), 
+		  url('/Fonts/Quakiez/Quakiez-Display.svg') format('svg'); 
+	  font-weight: 400;
+	  font-style: normal;
+	  font-display: swap;
+}
+@font-face{
+	font-family: 'Mermaid-Bold';
+	  src: url('/Fonts/Mermaid/Mermaid-Bold.eot'),
+		url('/Fonts/Mermaid/Mermaid-Bold.eot?#iefix') format('embedded-opentype'),
+		  url('/Fonts/Mermaid/Mermaid-Bold.woff2') format('woff2'),
+		  url('/Fonts/Mermaid/Mermaid-Bold.woff') format('woff'),
+		  url('/Fonts/Mermaid/Mermaid-Bold.ttf')  format('truetype'), 
+		  url('/Fonts/Mermaid/Mermaid-Bold.svg') format('svg'); 
+	  font-weight: 50;
+	  font-style: normal;
+	  font-display: swap;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	display: grid;
+    grid-template-columns: 1fr; 
+	grid-gap: 10px;
+	justify-content: center;
+}
+.content-container{
+	background-image: url('/images/burningbooks.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 90%;
+	height: 100vh;
+}
+/*---------------------------end section---------------------------------*/
+
+
+/*--------------------------Index/Home---------------------------*/
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Quakiez-Display";
+	font-size: 65px;
+	display: grid;
+	grid-template-columns: 1fr; 
+	grid-gap: 10px;
+	justify-content: center;
+	color: white;
+	background-color:black;
+	margin-top: 0px;
+}
+
+
+	.subtext{
+		margin-top: -53.95px;
+		font-family:'Times New Roman', Times, serif;
+		background-color: white;
+		opacity: 70%;
+	}	
+	.buttons {
+		font-family:'Times New Roman', Times, serif;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+		justify-content: center;
+		place-items: center;
+		color:black;
+	}
+	.librarybutton {
+		order: 2;
+		font-family: "Open Sans", sans-serif;
+		font-size: 18px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+		color: #000;
+		cursor: pointer;
+		border: 3px solid;
+		padding: 0.25em 0.5em;
+		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		position: relative;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+	.searchbutton {
+		order: 1;
+		font-family: "Open Sans", sans-serif;
+		font-size: 18px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+		color: #000;
+		cursor: pointer;
+		border: 3px solid;
+		padding: 0.25em 0.5em;
+		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		position: relative;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+		.historybutton {
+			order: 3;
+			font-family: "Open Sans", sans-serif;
+			font-size: 18px;
+			letter-spacing: 2px;
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center;
+			background-color: white;
+			color: #000;
+			cursor: pointer;
+			border: 3px solid;
+			padding: 0.25em 0.5em;
+			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+			position: relative;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+		}
+
+h2{
+	font-size: 150%;
+	font-family: 'Mermaid-Bold';
+	text-align: center;
+	display: grid;
+    grid-template-columns: 1fr; 
+	grid-gap: 10px;
+	justify-content: center;
+}
+.history-title h1{
+		text-transform: capitalize;
+		text-align: center;
+		font-family: "Quakiez-Display";
+		font-size: 65px;
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+}
+.paragraphs {
+	text-align: center;
+}
+/*---------------------------end section---------------------------------*/
+
+
+/*---------------------------Background info. page---------------------------*/
+	.background-info-1{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.background-info-2{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.background-info-3{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	.background-info-4{
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-gap: 10px;
+		justify-content: center;
+	}
+
+/*---------------------------end section---------------------------------*/
+
+
+/*---------------------------Library page---------------------------*/
+/*use grid and reference datalibrary*/
+
+.datalibrary {
+	background-color: white;
+	text-align: center;
+	list-style-type: none;
+	padding: 0px;
+	display: grid; 
+	grid-template-columns: repeat(4, 1fr);
+	max-width: 700px;
+	gap: 50px;
+	@media (min-width: 1024px) {
+		
+	}
+
+}
+
+.librarytitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 31px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #000, /* Top-left shadow */
+			1px -1px 0 #000, /* Top-right shadow */
+			-1px 1px 0 #000, /* Bottom-left shadow */
+			1px 1px 0 #000; /* Bottom-right shadow */
+		
+	
+	@media (min-width: 1024px) {
+		font-size: 60px;
+		text-shadow: 
+			-2px -2px 0 #000, /* Top-left shadow */
+			2px -2px 0 #000, /* Top-right shadow */
+			-2px 2px 0 #000, /* Bottom-left shadow */
+			2px 2px 0 #000; /* Bottom-right shadow */
+		margin-bottom: 20px;
+	}
+}
+
+.librarysubtext {
+	display: block;
+	color: #000;
+	text-align: center;       
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	@media (min-width: 1024px) {
+		font-size: 30px;
+	}
+	
+}
+
+.list {
+	position: relative;
+	@media (min-width: 760px) {
+        justify-content: center;
+		
+}
+
+
+}
+
+.getdatabutton {
+	margin-top: 100px;
+
+}
+.card {
+	/*asked ChatGPT how to use absolute and relative positioning in CSS*/
+		border: 1px solid black;
+		position: absolute;
+		top: -70px;
+		background-color: white;
+		width: 300px;
+		@media (min-width: 760px) {
+			align-content: center;
+	}
+	
+	}
+
+.librarybookimages {
+	max-height: 120px;
+	position: relative;
+	@media (min-width: 760px) {
+		align-content: center;
+}
+	@media (min-width: 1024px) {
+		max-height: 200px;
+	}	
+
+}
+.list .card {
+	opacity: 0;
+	transition: all .3s ease-in;
+}
+
+.list:hover .card {
+	opacity: 1;
+}
+.results .card {
+	opacity: 1;
+	background-color: transparent;
+	position: static;
+	display: none;
+
+}
+
+/*---------------------------end section---------------------------------*/
+
+
+
+/*---------------------------General SEARCH page---------------------------*/
+.searchpagebuttons{
+	background-image: url('/images/gianteye.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 90%;
+	height: 100vh;	
+	padding-top: 100px;
+}
+
+
+.searchtitle {
+	flex-shrink: 0;
+	color: white;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 70px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #000, /* Top-left shadow */
+			1px -1px 0 #000, /* Top-right shadow */
+			-1px 1px 0 #000, /* Bottom-left shadow */
+			1px 1px 0 #000; /* Bottom-right shadow */
+}
+.searchbuttons {
+	font-family:'Times New Roman', Times, serif;
+	display: flex;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	color:black;
+	align-content: center;
+	justify-content: center;
+	margin-top: 200px;
+}
+
+.fictionbutton {
+	order: 1;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+.nonfictionbutton {
+	order: 2;
+	display: inline-block;
+	justify-content: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: white;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: auto;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+	@media (min-width: 768px) {
+		.nonfictionbutton{
+		padding: 0.25em 0.75em;
+		max-width: 40%;
+		}
+	}
+
+	.searchhomebutton{
+		display: inline-block;
+		justify-content: center;
+		align-items: center;
+		font-family: "Open Sans", sans-serif;
+		font-size: 24px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: white;
+		color: #000;
+		cursor: pointer;
+		border: 3px solid;
+		padding: 0.25em 0.5em;
+		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		position: relative;
+		user-select: auto;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+		@media (min-width: 768px) {
+			.searchhomebutton{
+			padding: 0.25em 0.75em;
+			max-width: 40%;
+			}
+		}
+
+
+/*---------------------------end section---------------------------------*/
+
+
+
+/*---------------------------Fiction SEARCH page---------------------------*/
+
+
+.fictionsearchtitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0px;
+	padding-top: 60px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #ffffff, /* Top-left shadow */
+			1px -1px 0 #ffffff, /* Top-right shadow */
+			-1px 1px 0 #ffffff, /* Bottom-left shadow */
+			1px 1px 0 #ffffff; /* Bottom-right shadow */
+	background-color: black;
+		}
+	
+.fictionsearchsubtitle {
+	font-family :'Mermaid', sans-serif;
+	font-size: 25px;
+	color: black;
+
+
+}
+.fictionboxes {
+	font-size: 25px;
+	font-family :'Baskerville', sans-serif;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-top: 15px;
+	max-width: 50%;
+	
+}
+
+	.fictionboxes input[type="checkbox"] {
+		display: none;
+		visibility: hidden;
+	}
+
+	.fictionboxes label {
+		position: relative;
+		padding-left: 2em;
+		padding-right: 1em;
+		line-height: 2;
+		cursor: pointer;
+		display: inline-flex;
+	}
+
+	.fictionboxes label:before {
+		box-sizing: border-box;
+		content: " ";
+		position: absolute;
+		top: 0.3em;
+		left: 0;
+		display: block;
+		width: 1.4em;
+		height: 1.4em;
+		border: 2px solid #9098A9;
+		border-radius: 6px;
+		z-index: -1;
+	}
+
+	.fictionboxes input[type=checkbox]:checked + label {
+		padding-left: 1em;
+		color: #0f5229;
+	}
+	.fictionboxes input[type=checkbox]:checked + label:before {
+		top: 0;
+		width: 100%;
+		height: 2em;
+		background: #b7e6c9;
+		border-color: #2cbc63;
+	}
+
+	.fictionboxes label,
+	.fictionboxes label::before {
+		transition: 0.25s all ease;
+	}
+/* Foundational CSS for checkbox design courtesy of Raul Berrera, adjusted to fit our project*/
+
+.fictionendbuttons {
+		font-family:'Times New Roman', Times, serif;
+		display: flex;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		color:black;
+		align-content: center;
+		justify-content: center;
+		margin-top: 200px;
+		}
+
+.fictionhomebutton {
+	order: 1;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: white;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionhomebutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+	  
+.fictionresultbutton {
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	letter-spacing: 2px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: white;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+	@media (min-width: 768px) {
+		.fictionresultbutton{
+		padding: 0.25em 0.75em;
+		max-width: 40%;
+		}
+	}
+
+
+/*---------------------------end section---------------------------------*/
+
+
+
+
+
+/*---------------------------NF SEARCH page---------------------------*/
+
+
+.nfsearchtitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0px;
+	padding-top: 60px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #ffffff, /* Top-left shadow */
+			1px -1px 0 #ffffff, /* Top-right shadow */
+			-1px 1px 0 #ffffff, /* Bottom-left shadow */
+			1px 1px 0 #ffffff; /* Bottom-right shadow */
+	background-color: black;
+		}
+
+.fnfsearchsubtitle {
+	font-family :'Mermaid', sans-serif;
+	font-size: 25px;
+	color: black;
+		
+		
+}
+.nfboxes {
+	font-size: 25px;
+	font-family :'Mermaid', sans-serif;
+	display: grid;
+	gap: 20px;
+	padding-top: 30px;
+}
+
+
+.nfboxes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-size: 25px;
+	font-family :'Baskerville', sans-serif;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-top: 15px;
+	max-width: 50%;
+		
+	}
+
+.nfboxes input[type="checkbox"] {
+	display: none;
+	visibility: hidden;
+}
+
+.nfboxes label {
+	position: relative;
+	padding-left: 2em;
+	padding-right: 1em;
+	line-height: 2;
+	cursor: pointer;
+	display: inline-flex;
+}
+
+.nfboxes label:before {
+	box-sizing: border-box;
+	content: " ";
+	position: absolute;
+	top: 0.3em;
+	left: 0;
+	display: block;
+	width: 1.4em;
+	height: 1.4em;
+	border: 2px solid #9098A9;
+	border-radius: 6px;
+	z-index: -1;
+}
+
+.nfboxes input[type=checkbox]:checked + label {
+	padding-left: 1em;
+	color: #0f5229;
+}
+.nfboxes input[type=checkbox]:checked + label:before {
+	top: 0;
+	width: 100%;
+	height: 2em;
+	background: #b7e6c9;
+	border-color: #2cbc63;
+}
+
+.nfboxes label,
+.nfboxes label::before {
+	transition: 0.25s all ease;
+}
+.fictionsearchtitle {
+	flex-shrink: 0;
+	color: #DC3545;
+	text-align: center;
+/* font family issues, font won't change */
+	font-family: 'Inter', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0px;
+	padding-top: 60px;
+	/*asked ChatGPT how to outline text in CSS*/
+	text-shadow: 
+			-1px -1px 0 #ffffff, /* Top-left shadow */
+			1px -1px 0 #ffffff, /* Top-right shadow */
+			-1px 1px 0 #ffffff, /* Bottom-left shadow */
+			1px 1px 0 #ffffff; /* Bottom-right shadow */
+	background-color: black;
+		}
+
+.nfendbuttons {
+		font-family:'Times New Roman', Times, serif;
+		display: flex;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		color:black;
+		align-content: center;
+		justify-content: center;
+		margin-top: 200px;
+		}
+
+.nfhomebutton {
+	order: 1;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+.nfresultbutton {
+	order: 2;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: underline;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.nfresultbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+
+
+/*---------------------------Nonfiction Result page---------------------------*/
+
+.nfresultendbuttons {
+	font-family:'Times New Roman', Times, serif;
+	display: flex;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	color:black;
+	align-content: center;
+	justify-content: center;
+	margin-top: 200px;
+
+}
+
+.nfresulthomebutton {
+	order: 1;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+
+.nfresultlibrarybutton {
+
+	order: 2;
+	display: inline-block;
+	  font-family: "Open Sans", sans-serif;
+	  font-size: 24px;
+	  letter-spacing: 2px;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  background-color: white;
+	  color: #000;
+	  cursor: pointer;
+	  border: 3px solid;
+	  padding: 0.25em 0.5em;
+	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  position: relative;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	}
+	@media (min-width: 768px) {
+		.fictionbutton{
+		  padding: 0.25em 0.75em;
+		  max-width: 40%;
+		}
+	  }
+
+/*---------------------------end section---------------------------------*/
+
+/* media queries
+@media (min-width: 760px) {
+		padding-top: 30px;
+		font-size: 60px;
+	}
+	@media (min-width: 1024px) {
+		font-size: 80px;
+		padding-top: 68px;
+		text-align: right;
+	}
+	*/
