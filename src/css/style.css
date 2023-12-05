@@ -480,6 +480,7 @@ h2{
 	display: grid;
 	gap: 20px;
 	padding-top: 30px;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .fictionendbuttons {
@@ -551,78 +552,6 @@ h2{
 /*---------------------------end section---------------------------------*/
 
 
-/*---------------------------Fiction Result page---------------------------*/
- 
-.fictionresultendbuttons {
-	font-family:'Times New Roman', Times, serif;
-	display: flex;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
-	color:black;
-	align-content: center;
-	justify-content: center;
-	margin-top: 200px;
-
-}
-
-.fictionresulthomebutton {
-	order: 1;
-	display: inline-block;
-	  font-family: "Open Sans", sans-serif;
-	  font-size: 24px;
-	  letter-spacing: 2px;
-	  text-decoration: none;
-	  text-transform: uppercase;
-	  text-align: center;
-	  background-color: white;
-	  color: #000;
-	  cursor: pointer;
-	  border: 3px solid;
-	  padding: 0.25em 0.5em;
-	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-	  position: relative;
-	  user-select: none;
-	  -webkit-user-select: none;
-	  touch-action: manipulation;
-	}
-	@media (min-width: 768px) {
-		.fictionbutton{
-		  padding: 0.25em 0.75em;
-		  max-width: 40%;
-		}
-	  }
-
-.fictionresultlibrarybutton {
-
-	order: 2;
-	display: inline-block;
-	  font-family: "Open Sans", sans-serif;
-	  font-size: 24px;
-	  letter-spacing: 2px;
-	  text-decoration: none;
-	  text-transform: uppercase;
-	  text-align: center;
-	  background-color: white;
-	  color: #000;
-	  cursor: pointer;
-	  border: 3px solid;
-	  padding: 0.25em 0.5em;
-	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-	  position: relative;
-	  user-select: none;
-	  -webkit-user-select: none;
-	  touch-action: manipulation;
-	}
-	@media (min-width: 768px) {
-		.fictionbutton{
-		  padding: 0.25em 0.75em;
-		  max-width: 40%;
-		}
-	  }
-
-/*---------------------------end section---------------------------------*/
-
-
 /*---------------------------NF SEARCH page---------------------------*/
 
 
@@ -647,9 +576,25 @@ h2{
 	background-color: black;
 		}
 
+.fnfsearchsubtitle {
+	font-family :'Mermaid', sans-serif;
+	font-size: 25px;
+	color: black;
+		
+		
+}
+.nfboxes {
+	font-size: 25px;
+	font-family :'Mermaid', sans-serif;
+	display: grid;
+	gap: 20px;
+	padding-top: 30px;
+}
+
+
 .nfboxes {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 } 
 .fictionsearchtitle {
 	flex-shrink: 0;

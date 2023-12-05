@@ -91,7 +91,7 @@ if (checkboxes !== null){
     if ( event.target.tagName === "INPUT") {
         checked.push(event.target.id)
         alert(checked);
-      if (checkboxes == null{
+      if (checkboxes == null){
         
       }
         }
