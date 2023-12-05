@@ -87,13 +87,12 @@ const checkboxes = document.querySelector('#fictionboxes');
 let checked = [];
 
 if (checkboxes !== null) {
-  checkboxes.addEventListener("click", function(event)) {  
+  checkboxes.addEventListener("click", function(event)) {
     console.log(event.target);
     if ( event.target.tagName === "INPUT") {
         checked.push(event.target.id)
         alert(checked);
       if (checkboxes == null){
-        
       }
         }
     } 
