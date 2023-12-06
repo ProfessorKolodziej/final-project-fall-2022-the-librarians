@@ -661,15 +661,33 @@ h2{
 	background-color: black;
 		}
 
+.fnfsearchsubtitle {
+	font-family :'Mermaid', sans-serif;
+	font-size: 25px;
+	color: black;
+		
+		
+}
 .nfboxes {
-		font-size: 25px;
-		font-family :'Baskerville', sans-serif;
-		margin: 0;
-		display: flex;
-		align-items: center;
-		gap: 20px;
-		padding-top: 15px;
-		max-width: 50%;
+	font-size: 25px;
+	font-family :'Mermaid', sans-serif;
+	display: grid;
+	gap: 20px;
+	padding-top: 30px;
+}
+
+
+.nfboxes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-size: 25px;
+	font-family :'Baskerville', sans-serif;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-top: 15px;
+	max-width: 50%;
 		
 	}
 
