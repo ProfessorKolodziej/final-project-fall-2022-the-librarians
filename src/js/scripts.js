@@ -80,7 +80,7 @@ const button = document.querySelector('#getdata');
     // Look for items that match one of genre OR author field text.
     let requireSome = `OR(`;
 
-    // let requireSome = `OR(SEARCH("Modern", Genres), SEARCH("Sci-Fi", Genres))`
+    // let requireSome = `OR(SEARCH("Modern", Genres), SEARCH("Sci-Fi", Genres  ))`
 
     for (genre of checked) {
       console.log(genre)
