@@ -272,6 +272,7 @@ h2{
 	/*asked ChatGPT how to use absolute and relative positioning in CSS*/
 		border: 1px solid black;
 		position: absolute;
+	/*Z index for positioning stuff^*/
 		top: -70px;
 		background-color: white;
 		width: 300px;

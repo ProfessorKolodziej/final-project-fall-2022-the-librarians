@@ -2,12 +2,14 @@
 
 ## Description
 
-Please add a brief description of your final project here.
+We did a project on banned bokos that included a banned books database.
 
 ## Project Documentation
 
 - [CM523 Final Project Guidelines &amp; Schedule](https://docs.google.com/document/d/1gvG9_1XYfp5-BVUgCDL9JDaZ3Acm6hHP7lDF3MqXPzY/edit#heading=h.61wsleacz62i)
-- **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/YOUR-REPOSITORY-NAME/`.
+- **Final code demo:** https://professorkolodziej.github.io/final-project-fall-2022-the-librarians/
+
+
 - Add any links to wireframes, mockups, your presentation, etc. here in a list so it is easy for you to find later.
 
 ## How to Use This Repository
@@ -33,7 +35,6 @@ Make sure you've [set up your development environment](https://docs.google.com/d
 | **Share your code or get feedback** | <ol><li>Make sure you've <a href="https://docs.google.com/document/d/14usTx6c1L1MwSjRvwtk4spz40EDgHV50_53kKAiHzcM/edit#heading=h.wbv8m5wypm86">committed your changes</a>.</li><li>Make sure you've created a branch! If you didn't, don't worry - <a href="https://docs.google.com/document/d/14usTx6c1L1MwSjRvwtk4spz40EDgHV50_53kKAiHzcM/edit#heading=h.6f5isvs2javn">that's fixable too</a>.</li><li><a href="https://docs.google.com/document/d/14usTx6c1L1MwSjRvwtk4spz40EDgHV50_53kKAiHzcM/edit#heading=h.3lyvv3ixplo8">Push your branch</a> up to Github.</li><li><a href="https://docs.google.com/document/d/14usTx6c1L1MwSjRvwtk4spz40EDgHV50_53kKAiHzcM/edit#heading=h.nhy8yvaw9s6l">Open a pull request</a>. Don't forget to assign yourself, and request a review from your team members in your Slack channel. If it's in progress, you can <a href="https://github.blog/2019-02-14-introducing-draft-pull-requests/">mark it as a draft</a>.</li></ol> | As soon as you're ready for feedback! Earlier is better. |
 | **Merge your code** | <ol><li>Make sure you've <a href="https://docs.google.com/document/d/14usTx6c1L1MwSjRvwtk4spz40EDgHV50_53kKAiHzcM/edit#heading=h.nhy8yvaw9s6l">opened a pull request</a> and asked for a code review from someone on your team.</li><li>Once it's approved, you're ready to merge! <a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request#merging-a-pull-request-on-github">Hit the big green button</a>.</li><li>Delete your branch on Github. Don't worry, you can always get it back!</li><li>Delete your local branch in Tower if you like. This helps keeps things clean.</li></ol> | When it's feeling good and stable! |
 | **Deploy your code (make it live)!** | <ol><li>Make sure you've merged your code!</li><li>Switch to the main branch in Tower.</li><li>Make sure to pull in updates so you have the latest code.</li><li>Navigate to your project in terminal, and then run `npm run deploy`.</li><li>In 15 minutes or so, you should see an update on Github Pages! The URL will be `https://professorkolodziej.github.io/YOUR-REPOSITORY-NAME/` (you might want to edit this to show your link so this is easy for you to find later). Sometimes, it takes less time.</li></ol> | When you're ready to show your work to the world, or for a class check in! |
-
 ## Credits
 
 This project is based on the [Student Site Boilerplate Template](https://professorkolodziej.github.io/student-site-boilerplate/). Check out the [documentation](https://github.com/ProfessorKolodziej/student-site-boilerplate/#student-site-boilerplate) for more information on prerequisites for using this repository.
