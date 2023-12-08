@@ -236,7 +236,6 @@ h2{
 	max-width: 700px;
 	gap: 50px;
 	@media (min-width: 1024px) {
-		
 	}
 
 }
@@ -291,10 +290,10 @@ h2{
 .list {
 	position: relative;
 	@media (min-width: 760px) {
-        justify-content: center;
-		
+        justify-content: center;		
 }
-
+	@media (min-width: 1024px) {
+	}
 
 }
 
@@ -307,6 +306,7 @@ h2{
 		border: 1px solid black;
 		position: absolute;
 	/*Z index for positioning stuff^*/
+		z-index: 2;
 		top: -70px;
 		background-color: white;
 		width: 300px;
@@ -319,11 +319,13 @@ h2{
 .librarybookimages {
 	max-height: 120px;
 	position: relative;
+	z-index: 1;
 	@media (min-width: 760px) {
 		align-content: center;
 }
 	@media (min-width: 1024px) {
 		max-height: 200px;
+	
 	}	
 
 }

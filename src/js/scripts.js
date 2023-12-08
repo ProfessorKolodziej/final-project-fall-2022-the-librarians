@@ -26,7 +26,7 @@ const lookForGenre = `SEARCH("Fiction",Genres)`;
 const lookForAuthor = `SEARCH("Harper",Author)`;
 
 // Look for items that match one of genre OR author field text.
-const requireSome = `OR(${lookForGenre}, ${lookForAuthor})`;
+//const requireSome = `OR(${lookForGenre}, ${lookForAuthor})`;
 
 // Look for items that match BOTH genre and author field text.
 const requireAll = `AND(${lookForGenre}, ${lookForAuthor})`;
@@ -80,14 +80,22 @@ const button = document.querySelector('#getdata');
     // Look for items that match one of genre OR author field text.
     let requireSome = `OR(`;
 
-    // let requireSome = `OR(SEARCH("Modern", Genres), SEARCH("Sci-Fi", Genres  ))`
+    //let requireSome = `OR(SEARCH("Modern", Genres), SEARCH("Sci-fi", Genres), SEARCH("LGBTQIA+", Genres), SEARCH("Historical", Genres), SEARCH("Political", Genres), SEARCH("Philosophical", Genres), SEARCH("Feminism", Genres), SEARCH("Religion", Genres), SEARCH("Race", Genres), SEARCH("Fantasy", Genres))`
+    let type = "Nonfiction"
+    if (checked.includes("Fiction")){
+      type = "Fiction"
+    }
 
+    let queries = `AND(SEARCH("${type}", Genres),`
+  
     for (genre of checked) {
       console.log(genre)
       console.log(`SEARCH("${genre}",Genres)`)
+      queries += `SEARCH("${genre}",Genres),`
     }
+    let cleanedQueries = queries.slice(0, -1);
 
-    requireSome += `)`;
+    requireSome += `${cleanedQueries}))`;
 
     apiUrl += `?filterByFormula=${encodeURI(requireSome)}`;
     console.log(apiUrl)
