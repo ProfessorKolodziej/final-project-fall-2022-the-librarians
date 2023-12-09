@@ -561,13 +561,18 @@ img {
 /*---------------------------Fiction SEARCH page---------------------------*/
 
 .search-content-container{
-	background-image: url('/images/gianteye.jpg');
+	background-image: url('/images/gianteye-opacity50.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	opacity: 90%;
-	height: 175vh;
+	height: 200vh;
+
+	@media (min-width:748px) {
+	height: 180vh;
+	}
 }
+
 .search-heading {
 	text-transform: uppercase;
 	text-align: center;
@@ -579,7 +584,7 @@ img {
 	background-color:black;
 	margin-top: 0px;
 	padding: 70px;
-	font-size: 45px;
+	font-size: 35px;
 }
 
 .searchtitle{
@@ -596,23 +601,32 @@ img {
 	color: white;
 
 	@media (min-width:748px) {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 
 }
-.fictionboxes {
-	font-size: 25px;
-	font-family :'Baskerville', sans-serif;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	padding-top: 15px;
-	max-width: 50%;
-	
-}
 
+#allfictionboxes{
+	gap: 10px; 
+	color:black;
+	place-items: center;
+	align-items: center;
+	margin-top: 10%;
+	margin-left:30%;
+	font-family: 'Arial Black';
+	font-size: 22px;
+	@media (min-width:748px){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.fictionboxes{
+	@media (min-width:748px){
+	flex: 0 0 calc(50% - 10px); 
+	}
+}
 	.fictionboxes input[type="checkbox"] {
 		display: none;
 		visibility: hidden;
@@ -625,6 +639,7 @@ img {
 		line-height: 2;
 		cursor: pointer;
 		display: inline-flex;
+		font-weight:bold;
 	}
 
 	.fictionboxes label:before {
@@ -636,8 +651,8 @@ img {
 		display: block;
 		width: 1.4em;
 		height: 1.4em;
-		border: 2px solid #9098A9;
-		border-radius: 6px;
+		border: 2px solid black;
+		border-radius: 4px;
 		z-index: -1;
 	}
 
