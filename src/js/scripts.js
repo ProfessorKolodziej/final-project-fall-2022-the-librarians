@@ -135,5 +135,7 @@ if (checkboxes !== null) {
   });
 }
 
+//For About page//
+
 
 

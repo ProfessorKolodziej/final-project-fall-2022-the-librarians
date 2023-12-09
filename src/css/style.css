@@ -87,13 +87,13 @@ img {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 10px;
-		margin-top: -17%;
+		margin-top: -20%;
 		justify-content: center;
 		place-items: center;
 		color:black;
 
 		@media (min-width: 748px) {
-			margin-top: -7%;
+			margin-top: -6%;
 			font-size: 25px;
 		}	
 	}
@@ -166,59 +166,129 @@ img {
 			}	
 		}
 
-h2{
-	font-size: 150%;
-	font-family: 'Mermaid-Bold';
+
+.history-heading {
+	text-transform: uppercase;
 	text-align: center;
-	display: grid;
-    grid-template-columns: 1fr; 
+	font-family: "Times";
+	display: grid; 
 	grid-gap: 10px;
 	justify-content: center;
+	color: white;
+	background-color:black;
+	margin-top: 0px;
+	padding: 70px;
 }
-.history-title h1{
-		text-transform: capitalize;
-		text-align: center;
-		font-family: "Quakiez-Display";
-		font-size: 65px;
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
+
+.historytitle{
+	font-size: 45px;
+
+	@media (min-width: 748px) {
+		font-size: 70px;
+		padding: 30px;
 }
-.paragraphs {
+}
+
+.history-subtext {
+	font-size: 25px; 
+	font-family:'Times New Roman', Times, serif;
+    font-style: italic; 
+    margin-top: 18px; 
+    margin-bottom: 40px;
+
+	@media (min-width: 748px) {
+		font-size: 100px;
+	}
+}
+
+.bannedbooks-article-1{
+	background-color: #F6F6F6;
+	justify-content:center;
+	align-items: center;
+	margin-top: 75px;
+
+	@media (min-width: 748px) {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 0px;
+}
+	
+}
+.banned-books-description{
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: 748px) {
+	margin-right: 20%;
+	font-size: 20px;
+	}
 }
-/*---------------------------end section---------------------------------*/
+.thumbnail {
+    display: grid;
+	grid-template-columns: 1fr;  
+    max-width: 200px; 
+    height: auto;  
+    padding: 5px; 
+    margin: 10px; 
+	
+	@media (min-width: 748px) {
+		margin-left:20%;
+		}
+}
+.ultra-styled{
+	color:#C62025;
+	font-weight:bold;
+	font-size: 22px;
+	
+	@media (min-width: 748px) {
+	font-size: 25px;
+	}
+}
+
+.bannedbooks-article-2{
+	background-color: black;
+	color: white;
+	justify-content:center;
+	align-items: center;
+	margin-top: 75px;
+
+	@media (min-width: 748px) {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 0px;
+	}
+}
+
+.PENAmerica-description{
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: 748px) {
+	margin-right: 20%;
+	font-size: 20px;
+	}
+}
+.thumbnail {
+    display: grid;
+	grid-template-columns: 1fr;  
+    max-width: 200px; 
+    height: auto;  
+    padding: 5px; 
+    margin: 10px; 
+	
+	@media (min-width: 748px) {
+		margin-left:20%;
+		}
+	}
+-------------------------end section---------------------------------*/
 
 
-/*---------------------------Background info. page---------------------------*/
-	.background-info-1{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-		align-items: center;
-	}
-	.background-info-2{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-		align-items: center;
-	}
-	.background-info-3{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-		align-items: center;
-	}
-	.background-info-4{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-	}
 
 /*---------------------------end section---------------------------------*/
 
