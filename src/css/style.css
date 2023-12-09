@@ -430,28 +430,6 @@ img {
 	padding-top: 100px;
 }
 
-
-.searchtitle {
-	flex-shrink: 0;
-	color: white;
-	text-align: center;
-/* font family issues, font won't change */
-	font-family: 'Helvetica Neue', sans-serif;
-	font-size: 70px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-
-	/*asked ChatGPT how to outline text in CSS*/
-	text-shadow: 
-			-1px -1px 0 #000, /* Top-left shadow */
-			1px -1px 0 #000, /* Top-right shadow */
-			-1px 1px 0 #000, /* Bottom-left shadow */
-			1px 1px 0 #000; /* Bottom-right shadow */
-}
 .searchbuttons {
 	font-family:'Times New Roman', Times, serif;
 	display: flex;
@@ -553,31 +531,36 @@ img {
 /*---------------------------Fiction SEARCH page---------------------------*/
 
 
-.fictionsearchtitle {
-	flex-shrink: 0;
-	color: #DC3545;
+.search-heading {
+	text-transform: uppercase;
 	text-align: center;
-/* font family issues, font won't change */
-	font-family: 'Inter', sans-serif;
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	margin: 0px;
-	padding-top: 60px;
-	/*asked ChatGPT how to outline text in CSS*/
-	text-shadow: 
-			-1px -1px 0 #ffffff, /* Top-left shadow */
-			1px -1px 0 #ffffff, /* Top-right shadow */
-			-1px 1px 0 #ffffff, /* Bottom-left shadow */
-			1px 1px 0 #ffffff; /* Bottom-right shadow */
-	background-color: black;
-		}
-	
-.fictionsearchsubtitle {
+	font-family: "Times";
+	display: grid; 
+	grid-gap: 10px;
+	justify-content: center;
+	color: white;
+	background-color:black;
+	margin-top: 0px;
+	padding: 70px;
+	font-size: 45px;
+}
+
+.searchtitle{
+	color:white;
+
+	@media (min-width: 748px) {
+		font-size: 70px;
+		padding: 30px;
+}
+}
+.searchsubtitle {
 	font-family :'Mermaid', sans-serif;
 	font-size: 25px;
-	color: black;
+	color: white;
+
+	@media (min-width:748px) {
+		font-size: 30px;
+	}
 
 
 }
