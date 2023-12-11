@@ -93,7 +93,7 @@ img {
 		color:black;
 
 		@media (min-width: 748px) {
-			margin-top: -6%;
+			margin-top: -7%;
 			font-size: 25px;
 		}	
 	}
