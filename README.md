@@ -8,9 +8,13 @@ We did a project on banned bokos that included a banned books database.
 
 - [CM523 Final Project Guidelines &amp; Schedule](https://docs.google.com/document/d/1gvG9_1XYfp5-BVUgCDL9JDaZ3Acm6hHP7lDF3MqXPzY/edit#heading=h.61wsleacz62i)
 - **Final code demo:** https://professorkolodziej.github.io/final-project-fall-2022-the-librarians/
+- GitHub pages: https://github.com/ProfessorKolodziej/final-project-fall-2022-the-librarians
 
 
 - Add any links to wireframes, mockups, your presentation, etc. here in a list so it is easy for you to find later.
+
+- Presentation link: https://docs.google.com/presentation/d/1eI136HFj_xtymQFt3hlCZ2aWPV0zkCm8kh68iiUPiVE/edit#slide=id.p
+- Emma's Reflection: Maddie and I worked really well together! She was incredibly helpful and attentive throughout the entire process and always asked me if I needed help. She also took it on herself to initiate design and CSS as well as some HTML. While we encountering some issues with AirTable and JavaScript, Maddie was incredibly supportive and focused on design while I improved functionality. We were able to resolve these challenges by working together and giving each other advice. I feel that I was able to effectively contribute to the group, and Maddie was a great project partner.
 
 ## How to Use This Repository
 
