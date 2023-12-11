@@ -410,11 +410,16 @@ img {
 		z-index: 2;
 		top: -70px;
 		background-color: white;
-		width: 326px;
+		width: 150px;
 		padding-bottom: 15%;
 		padding-top:15%;
 		@media (min-width: 760px) {
 			align-content: center;
+			width: 326px;
+	}
+		@media (min-width: 1024px) {
+			align-content: center;
+			width: 326px;
 	}
 	
 	}
