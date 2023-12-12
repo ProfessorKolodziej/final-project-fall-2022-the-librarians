@@ -23,7 +23,18 @@
 	  font-style: normal;
 	  font-display: swap;
 }
-
+@font-face {
+    font-family: 'Gasoek One';
+    src: url('GasoekOne-Regular.eot');
+    src: url('GasoekOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GasoekOne-Regular.woff2') format('woff2'),
+        url('GasoekOne-Regular.woff') format('woff'),
+        url('GasoekOne-Regular.ttf') format('truetype'),
+        url('GasoekOne-Regular.svg#GasoekOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 img {
 	display: block;
 	max-width: 100%;
@@ -47,8 +58,8 @@ img {
 .title {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "Quakiez-Display";
-	font-size: 65px;
+	font-family: "Times";
+	font-size: 55px;
 	display: grid;
 	grid-template-columns: 1fr; 
 	grid-gap: 10px;
@@ -56,6 +67,12 @@ img {
 	color: white;
 	background-color:black;
 	margin-top: 0px;
+	padding: 70px;
+
+	@media (min-width: 748px) {
+		font-size: 100px;
+		padding: 30px;
+	}	
 }
 
 
@@ -70,9 +87,15 @@ img {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 10px;
+		margin-top: -20%;
 		justify-content: center;
 		place-items: center;
 		color:black;
+
+		@media (min-width: 748px) {
+			margin-top: -7%;
+			font-size: 25px;
+		}	
 	}
 	.librarybutton {
 		order: 2;
@@ -92,6 +115,9 @@ img {
 		user-select: none;
 		-webkit-user-select: none;
 		touch-action: manipulation;
+		@media (min-width: 748px) {
+			font-size: 25px;
+		}	
 	}
 	.searchbutton {
 		order: 1;
@@ -111,8 +137,12 @@ img {
 		user-select: none;
 		-webkit-user-select: none;
 		touch-action: manipulation;
+
+		@media (min-width: 748px) {
+			font-size: 25px;
+		}	
 	}
-		.historybutton {
+		.aboutbutton {
 			order: 3;
 			font-family: "Open Sans", sans-serif;
 			font-size: 18px;
@@ -130,61 +160,165 @@ img {
 			user-select: none;
 			-webkit-user-select: none;
 			touch-action: manipulation;
+
+			@media (min-width: 748px) {
+				font-size: 25px;
+			}	
 		}
 
-h2{
-	font-size: 150%;
-	font-family: 'Mermaid-Bold';
+
+.about-heading {
+	text-transform: uppercase;
 	text-align: center;
-	display: grid;
-    grid-template-columns: 1fr; 
+	font-family: "Times";
+	display: grid; 
 	grid-gap: 10px;
 	justify-content: center;
+	color: white;
+	background-color:black;
+	margin-top: 0px;
+	padding: 70px;
 }
-.history-title h1{
-		text-transform: capitalize;
-		text-align: center;
-		font-family: "Quakiez-Display";
-		font-size: 65px;
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
+
+.abouttitle{
+	font-size: 45px;
+
+	@media (min-width: 748px) {
+		font-size: 70px;
+		padding: 30px;
 }
-.paragraphs {
+}
+
+.about-subtext {
+	font-size: 25px; 
+	font-family:'Times New Roman', Times, serif;
+    font-style: italic; 
+    margin-top: 18px; 
+    margin-bottom: 40px;
+
+	@media (min-width: 748px) {
+		font-size: 100px;
+	}
+}
+.about-button{
+	display:grid;
+	place-items: center;
+
+}
+.abouthomebutton{
+	order: 1;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 24px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
 	text-align: center;
+	background-color: white;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	margin-top: -6%;
+	
+	@media (min-width: 748px) {
+		margin-top: -1%;
+			font-size: 25px;
+		}
+	  }
+.bannedbooks-article-1{
+	background-color: #F6F6F6;
+	justify-content:center;
+	align-items: center;
+	margin-top: 75px;
+
+	@media (min-width: 748px) {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 0px;
 }
-/*---------------------------end section---------------------------------*/
+	
+}
+.banned-books-description{
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: 748px) {
+	margin-right: 20%;
+	font-size: 20px;
+	}
+}
+.thumbnail {
+    display: grid;
+	grid-template-columns: 1fr;  
+    max-width: 200px; 
+    height: auto;  
+    padding: 5px; 
+    margin: 10px; 
+	
+	@media (min-width: 748px) {
+		margin-left:20%;
+		}
+}
+.ultra-styled{
+	color:#C62025;
+	font-weight:bold;
+	font-size: 22px;
+	
+	@media (min-width: 748px) {
+	font-size: 25px;
+	}
+}
+
+.bannedbooks-article-2{
+	background-color: black;
+	color: white;
+	justify-content:center;
+	align-items: center;
+	margin-top: 75px;
+
+	@media (min-width: 748px) {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 0px;
+	}
+}
+
+.PENAmerica-description{
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	@media (min-width: 748px) {
+	margin-right: 20%;
+	font-size: 20px;
+	}
+}
+.thumbnail {
+    display: grid;
+	grid-template-columns: 1fr;  
+    max-width: 200px; 
+    height: auto;  
+    padding: 5px; 
+    margin: 10px; 
+	
+	@media (min-width: 748px) {
+		margin-left:20%;
+		}
+	}
+/*-------------------------end section---------------------------------*/
 
 
-/*---------------------------Background info. page---------------------------*/
-	.background-info-1{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-		align-items: center;
-	}
-	.background-info-2{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-		align-items: center;
-	}
-	.background-info-3{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-		align-items: center;
-	}
-	.background-info-4{
-		display: grid;
-		grid-template-columns: 1fr; 
-		grid-gap: 10px;
-		justify-content: center;
-	}
 
 /*---------------------------end section---------------------------------*/
 
@@ -198,46 +332,33 @@ h2{
 	list-style-type: none;
 	padding: 0px;
 	display: grid; 
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	max-width: 700px;
 	gap: 50px;
 	@media (min-width: 1024px) {
-		
 	}
 
 }
 
 .librarytitle {
-	flex-shrink: 0;
-	color: #DC3545;
+	text-transform: uppercase;
 	text-align: center;
-/* font family issues, font won't change */
-	font-family: 'Inter', sans-serif;
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 31px;
-	/*asked ChatGPT how to outline text in CSS*/
-	text-shadow: 
-			-1px -1px 0 #000, /* Top-left shadow */
-			1px -1px 0 #000, /* Top-right shadow */
-			-1px 1px 0 #000, /* Bottom-left shadow */
-			1px 1px 0 #000; /* Bottom-right shadow */
-		
-	
-	@media (min-width: 1024px) {
-		font-size: 60px;
-		text-shadow: 
-			-2px -2px 0 #000, /* Top-left shadow */
-			2px -2px 0 #000, /* Top-right shadow */
-			-2px 2px 0 #000, /* Bottom-left shadow */
-			2px 2px 0 #000; /* Bottom-right shadow */
-		margin-bottom: 20px;
+	font-family: "Times";
+	display: grid; 
+	grid-gap: 10px;
+	justify-content: center;
+	color: white;
+	background-color:black;
+	margin-top: 0px;
+	padding: 70px;
+	font-size: 45px;
+
+	@media (min-width: 748px) {
+		font-size: 70px;
+		padding: 30px;
 	}
 }
+
 
 .librarysubtext {
 	display: block;
@@ -248,19 +369,33 @@ h2{
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
+	padding: 5px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
 	@media (min-width: 1024px) {
 		font-size: 30px;
 	}
 	
 }
 
-.list {
-	position: relative;
+.datalibrary{
+	display: grid;
+	align-content: center;
+	place-items: center;
 	@media (min-width: 760px) {
-        justify-content: center;
-		
+		grid-template-columns:max-content;
+}
 }
 
+.list {
+	position: relative;
+	list-style: none;
+	padding: none;
+	@media (min-width: 760px) {
+        justify-content: center;		
+}
+	@media (min-width: 1024px) {
+	}
 
 }
 
@@ -272,25 +407,31 @@ h2{
 	/*asked ChatGPT how to use absolute and relative positioning in CSS*/
 		border: 1px solid black;
 		position: absolute;
+		z-index: 2;
 		top: -70px;
 		background-color: white;
-		width: 300px;
+		width: 150px;
+		padding-bottom: 15%;
+		padding-top:15%;
 		@media (min-width: 760px) {
 			align-content: center;
+			width: 326px;
+	}
+		@media (min-width: 1024px) {
+			align-content: center;
+			width: 326px;
 	}
 	
 	}
 
 .librarybookimages {
-	max-height: 120px;
+	max-height: 270px;
 	position: relative;
-	@media (min-width: 760px) {
-		align-content: center;
-}
-	@media (min-width: 1024px) {
-		max-height: 200px;
-	}	
-
+	z-index: 1;
+	padding-bottom: 15%;
+	padding-top:15%;
+	@media (min-width: 748px) {
+	}
 }
 .list .card {
 	opacity: 0;
@@ -323,28 +464,6 @@ h2{
 	padding-top: 100px;
 }
 
-
-.searchtitle {
-	flex-shrink: 0;
-	color: white;
-	text-align: center;
-/* font family issues, font won't change */
-	font-family: 'Helvetica Neue', sans-serif;
-	font-size: 70px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-
-	/*asked ChatGPT how to outline text in CSS*/
-	text-shadow: 
-			-1px -1px 0 #000, /* Top-left shadow */
-			1px -1px 0 #000, /* Top-right shadow */
-			-1px 1px 0 #000, /* Bottom-left shadow */
-			1px 1px 0 #000; /* Bottom-right shadow */
-}
 .searchbuttons {
 	font-family:'Times New Roman', Times, serif;
 	display: flex;
@@ -445,47 +564,73 @@ h2{
 
 /*---------------------------Fiction SEARCH page---------------------------*/
 
+.search-content-container{
+	background-image: url('/images/gianteye-opacity50.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 90%;
+	height: 200vh;
 
-.fictionsearchtitle {
-	flex-shrink: 0;
-	color: #DC3545;
+	@media (min-width:748px) {
+	height: 180vh;
+	}
+}
+
+.search-heading {
+	text-transform: uppercase;
 	text-align: center;
-/* font family issues, font won't change */
-	font-family: 'Inter', sans-serif;
-	font-size: 40px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	margin: 0px;
-	padding-top: 60px;
-	/*asked ChatGPT how to outline text in CSS*/
-	text-shadow: 
-			-1px -1px 0 #ffffff, /* Top-left shadow */
-			1px -1px 0 #ffffff, /* Top-right shadow */
-			-1px 1px 0 #ffffff, /* Bottom-left shadow */
-			1px 1px 0 #ffffff; /* Bottom-right shadow */
-	background-color: black;
-		}
-	
-.fictionsearchsubtitle {
+	font-family: "Times";
+	display: grid; 
+	grid-gap: 10px;
+	justify-content: center;
+	color: white;
+	background-color:black;
+	margin-top: 0px;
+	padding: 70px;
+	font-size: 35px;
+}
+
+.searchtitle{
+	color:white;
+
+	@media (min-width: 748px) {
+		font-size: 70px;
+		padding: 30px;
+}
+}
+.searchsubtitle {
 	font-family :'Mermaid', sans-serif;
 	font-size: 25px;
-	color: black;
+	color: white;
+
+	@media (min-width:748px) {
+		font-size: 25px;
+	}
 
 
 }
-.fictionboxes {
-	font-size: 25px;
-	font-family :'Baskerville', sans-serif;
-	margin: 0;
-	display: flex;
+
+#allfictionboxes{
+	gap: 10px; 
+	color:black;
+	place-items: center;
 	align-items: center;
-	gap: 20px;
-	padding-top: 15px;
-	max-width: 50%;
-	
+	margin-top: 10%;
+	margin-left:30%;
+	font-family: 'Arial Black';
+	font-size: 22px;
+	@media (min-width:748px){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
-
+.fictionboxes{
+	@media (min-width:748px){
+	flex: 0 0 calc(50% - 10px); 
+	}
+}
 	.fictionboxes input[type="checkbox"] {
 		display: none;
 		visibility: hidden;
@@ -498,6 +643,7 @@ h2{
 		line-height: 2;
 		cursor: pointer;
 		display: inline-flex;
+		font-weight:bold;
 	}
 
 	.fictionboxes label:before {
@@ -509,8 +655,8 @@ h2{
 		display: block;
 		width: 1.4em;
 		height: 1.4em;
-		border: 2px solid #9098A9;
-		border-radius: 6px;
+		border: 2px solid black;
+		border-radius: 4px;
 		z-index: -1;
 	}
 
@@ -563,7 +709,7 @@ h2{
 	-webkit-user-select: none;
 	touch-action: manipulation;
 	}
-	@media (min-width: 768px) {
+	@media (min-width: 748px) {
 		.fictionhomebutton{
 		  padding: 0.25em 0.75em;
 		  max-width: 40%;
@@ -589,7 +735,7 @@ h2{
 	-webkit-user-select: none;
 	touch-action: manipulation;
 }
-	@media (min-width: 768px) {
+	@media (min-width: 748px) {
 		.fictionresultbutton{
 		padding: 0.25em 0.75em;
 		max-width: 40%;

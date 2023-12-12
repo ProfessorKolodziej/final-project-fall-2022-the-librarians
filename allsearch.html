@@ -5,16 +5,27 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Search Fiction" content="Fiction Search">
+	<meta name="Search" content="Search">
     <link rel="stylesheet" type="text/css" href="css/style.css" >
 </head>
 <body>
-    <section>
-            <h1 class="fictionsearchtitle">FICTION</h1>
-            <h2 class="fictionsearchsubtitle">What genres are you interested in?</h2>
+  <main class="search-content-container">
+    <div class="search-heading">
+      <h1 class="searchtitle">BOOK SEARCH</h1>
+      <h2 class="searchsubtitle">What genres are you interested in? First, select Fiction or Nonfiction. Then, select your genre.</h2>
+      </div>
+    <section id="allfictionboxes">
+            <div class="fictionboxes">
+              <input type="checkbox" id="Fiction" name="Fiction" value="yes">
+              <label for="Fiction">Fiction</label>
+            </div>
+            <div class="fictionboxes">
+              <input type="checkbox" id="Nonfiction" name="Nonfiction" value="yes">
+              <label for="Nonfiction">Nonfiction</label>
+            </div>
             <div class="fictionboxes">
                 <input type="checkbox" id="Fantasy" name="Fantasy" value="yes">
-                <label for="Fantasy">Fantasy</label>
+                <label for="Fantasy">Fantasy (fiction only)</label>
               </div>
               
               <div class="fictionboxes">
@@ -54,23 +65,32 @@
               
               <div class="fictionboxes">
                 <input type="checkbox" id="Sci-fi" name="Sci-fi" value="yes">
-                <label for="Sci-fi">Sci-fi</label>
+                <label for="Sci-fi">Sci-fi (fiction only)</label>
               </div>
               
               <div class="fictionboxes">
                 <input type="checkbox" id="Modern" name="Modern" value="yes">
                 <label for="Modern">Modern</label>
               </div>
-              
+              <div class="fictionboxes">
+                <input type="checkbox" id="Autobiography" name="Autobiography" value="yes">
+                <label for="Autobiography">Autobiography (nonfiction only)</label>
+              </div>
+              <div class="fictionboxes">
+                <input type="checkbox" id="Memoir" name="Memoir" value="yes">
+                <label for="Memoir">Memoir (nonfiction only)</label>
+              </div>
+            </section>
         <div>
             <ul id="data" class="datalibrary results">
             </ul>
         </div>
         <div class="fictionendbuttons">
             <h3 class="fictionhomebutton"><a href="index.html">HOME</a></h3>
-            <h3 class="fictionresultbutton" id="getdata"> RESULTS </h3>
+            <h3 class="fictionresultbutton" id="fictionresultsbutton"> RESULTS </h3>
         </div>
-    </section>
+   
+  </main>
     <script src="js/scripts.js"></script> 
 </body>
 

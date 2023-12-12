@@ -26,15 +26,17 @@ const lookForGenre = `SEARCH("Fiction",Genres)`;
 const lookForAuthor = `SEARCH("Harper",Author)`;
 
 // Look for items that match one of genre OR author field text.
-const requireSome = `OR(${lookForGenre}, ${lookForAuthor})`;
+//const requireSome = `OR(${lookForGenre}, ${lookForAuthor})`;
 
 // Look for items that match BOTH genre and author field text.
 const requireAll = `AND(${lookForGenre}, ${lookForAuthor})`;
 
 // Choose the filterByFormula you want - lookForGenre, lookForAuthor, requireSome, or requireAll.
-const apiUrl = `https://api.airtable.com/v0/${baseId}/${tableId}?filterByFormula=${encodeURI(lookForGenre)}`;
+let apiUrl = `https://api.airtable.com/v0/${baseId}/${tableId}`;
+//?filterByFormula=${encodeURI(lookForGenre)}
 
 async function getAirtableData() {
+  console.log(apiUrl)
   const dataContainer = document.querySelector('#data');
   const response = await fetch(apiUrl, {
     headers: {
@@ -72,35 +74,68 @@ const button = document.querySelector('#getdata');
     getAirtableData();
   }
 
+  function getFilteredResults() {
+    console.log(checked);
+
+    // Look for items that match one of genre OR author field text.
+    let requireSome = `OR(`;
+
+    //let requireSome = `OR(SEARCH("Modern", Genres), SEARCH("Sci-fi", Genres), SEARCH("LGBTQIA+", Genres), SEARCH("Historical", Genres), SEARCH("Political", Genres), SEARCH("Philosophical", Genres), SEARCH("Feminism", Genres), SEARCH("Religion", Genres), SEARCH("Race", Genres), SEARCH("Fantasy", Genres))`
+    let type = "Nonfiction"
+    if (checked.includes("Fiction")){
+      type = "Fiction"
+    }
+
+    let queries = `AND(SEARCH("${type}", Genres),`
+  
+    for (genre of checked) {
+      console.log(genre)
+      console.log(`SEARCH("${genre}",Genres)`)
+      queries += `SEARCH("${genre}",Genres),`
+    }
+    let cleanedQueries = queries.slice(0, -1);
+
+    requireSome += `${cleanedQueries}))`;
+
+    apiUrl += `?filterByFormula=${encodeURI(requireSome)}`;
+    console.log(apiUrl)
+    getAirtableData();
+  }
+
 //ID goes in pound sign//
 const resultsbutton = document.querySelector('#fictionresultsbutton');
-resultsbutton.addEventListener('click', getAirtableData);
+
+  if (resultsbutton !== null){
+    resultsbutton.addEventListener('click', getFilteredResults);
+  }
+
 
 const secondresultsbutton = document.querySelector('#nfresultsbutton');
 
 if (secondresultsbutton !== null){
-  secondresultsbutton.addEventListener('click', getAirtableData);
+  secondresultsbutton.addEventListener('click', getFilteredResults);
 }
 
-const checkboxes = document.querySelector('#fictionboxes');
+const checkboxes = document.querySelector('#allfictionboxes');
 
 let checked = [];
 
 if (checkboxes !== null) {
-  checkboxes.addEventListener("click", function(event)) {
-    console.log(event.target);
-    if ( event.target.tagName === "INPUT") {
-        checked.push(event.target.id)
-        alert(checked);
-      if (checkboxes == null){
-      }
-        }
-    } 
-  }
+  checkboxes.addEventListener("click", function(event) {
     if (event.target.tagName === "INPUT") {
-      checked.push(event.target.id);
-      alert(checked);
-    };
-  
+      if (checked.includes(event.target.id)) {
+        checked = checked.filter(function(item) {
+          return item !== event.target.id;
+        });
+      } else {
+        checked.push(event.target.id);
+      }
+      console.log(checked);
+    }
+  });
+}
+
+//For About page//
+
 
 
