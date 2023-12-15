@@ -1,6 +1,6 @@
-/*---------------------------fonts---------------------------*/
+/* ---------------------------fonts--------------------------- */
 @font-face {
-	font-family: 'Quakiez-Display';
+	font-family: Quakiez-Display;
 	  src: url('/Fonts/Quakiez/Quakiez-Display.eot'),
 		url('/Fonts/Quakiez/Quakiez-Display.eot?#iefix') format('embedded-opentype'),
 		  url('/Fonts/Quakiez/Quakiez-Display.woff2') format('woff2'),
@@ -11,8 +11,9 @@
 	  font-style: normal;
 	  font-display: swap;
 }
+
 @font-face{
-	font-family: 'Mermaid-Bold';
+	font-family: Mermaid-Bold;
 	  src: url('/Fonts/Mermaid/Mermaid-Bold.eot'),
 		url('/Fonts/Mermaid/Mermaid-Bold.eot?#iefix') format('embedded-opentype'),
 		  url('/Fonts/Mermaid/Mermaid-Bold.woff2') format('woff2'),
@@ -23,6 +24,7 @@
 	  font-style: normal;
 	  font-display: swap;
 }
+
 @font-face {
     font-family: 'Gasoek One';
     src: url('GasoekOne-Regular.eot');
@@ -35,30 +37,25 @@
     font-style: normal;
     font-display: swap;
 }
+
 img {
-	display: block;
 	max-width: 100%;
 	display: grid;
     grid-template-columns: 1fr; 
 	grid-gap: 10px;
 	justify-content: center;
 }
-.content-container{
-	background-image: url('/images/burningbooks.jpg');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	opacity: 90%;
-	height: 100vh;
-}
-/*---------------------------end section---------------------------------*/
 
 
-/*--------------------------Index/Home---------------------------*/
+/* ---------------------------end section--------------------------------- */
+
+
+/* --------------------------Index/Home--------------------------- */
+
 .title {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "Times";
+	font-family: Times;
 	font-size: 55px;
 	display: grid;
 	grid-template-columns: 1fr; 
@@ -66,10 +63,10 @@ img {
 	justify-content: center;
 	color: white;
 	background-color:black;
-	margin-top: 0px;
 	padding: 70px;
-
-	@media (min-width: 748px) {
+	margin-top: 0px;
+	padding: 60px;
+	@media (width >= 748px) {
 		font-size: 100px;
 		padding: 30px;
 	}	
@@ -77,26 +74,30 @@ img {
 
 
 	.subtext{
-		margin-top: -53.95px;
 		font-family:'Times New Roman', Times, serif;
 		background-color: white;
-		opacity: 70%;
+		padding-bottom: 20px;
+		opacity: 0.7;
 	}	
+
 	.buttons {
 		font-family:'Times New Roman', Times, serif;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 10px;
-		margin-top: -20%;
-		justify-content: center;
 		place-items: center;
 		color:black;
-
-		@media (min-width: 748px) {
-			margin-top: -7%;
+		margin-top: -940px;
+		@media (width >= 748px) {
 			font-size: 25px;
+			margin-top: -950px;
+		}	
+		@media (width >= 1024px) {
+			font-size: 25px;
+			margin-top: -970px;
 		}	
 	}
+
 	.librarybutton {
 		order: 2;
 		font-family: "Open Sans", sans-serif;
@@ -110,15 +111,17 @@ img {
 		cursor: pointer;
 		border: 3px solid;
 		padding: 0.25em 0.5em;
-		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 		position: relative;
 		user-select: none;
-		-webkit-user-select: none;
+		user-select: none;
 		touch-action: manipulation;
-		@media (min-width: 748px) {
+
+		@media (width >= 748px) {
 			font-size: 25px;
 		}	
 	}
+
 	.searchbutton {
 		order: 1;
 		font-family: "Open Sans", sans-serif;
@@ -132,16 +135,17 @@ img {
 		cursor: pointer;
 		border: 3px solid;
 		padding: 0.25em 0.5em;
-		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 		position: relative;
 		user-select: none;
-		-webkit-user-select: none;
+		user-select: none;
 		touch-action: manipulation;
 
-		@media (min-width: 748px) {
+		@media (width >= 748px) {
 			font-size: 25px;
 		}	
 	}
+
 		.aboutbutton {
 			order: 3;
 			font-family: "Open Sans", sans-serif;
@@ -155,35 +159,42 @@ img {
 			cursor: pointer;
 			border: 3px solid;
 			padding: 0.25em 0.5em;
-			box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+			box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 			position: relative;
 			user-select: none;
-			-webkit-user-select: none;
+			user-select: none;
 			touch-action: manipulation;
 
-			@media (min-width: 748px) {
+			@media (width >= 748px) {
 				font-size: 25px;
 			}	
 		}
-
+.homepageimage{
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 0.9;
+	height: 100vh;
+	padding-top: 40px;
+		}
 
 .about-heading {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "Times";
+	font-family: Times;
 	display: grid; 
 	grid-gap: 10px;
 	justify-content: center;
 	color: white;
 	background-color:black;
-	margin-top: 0px;
+	margin-top: 0;
 	padding: 70px;
 }
 
 .abouttitle{
 	font-size: 45px;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 		font-size: 70px;
 		padding: 30px;
 }
@@ -196,15 +207,17 @@ img {
     margin-top: 18px; 
     margin-bottom: 40px;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 		font-size: 100px;
 	}
 }
+
 .about-button{
 	display:grid;
 	place-items: center;
 
 }
+
 .abouthomebutton{
 	order: 1;
 	display: inline-block;
@@ -219,31 +232,33 @@ img {
 	cursor: pointer;
 	border: 3px solid;
 	padding: 0.25em 0.5em;
-	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	position: relative;
 	user-select: none;
-	-webkit-user-select: none;
+	user-select: none;
 	touch-action: manipulation;
 	margin-top: -6%;
 	
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 		margin-top: -1%;
 			font-size: 25px;
 		}
 	  }
+
 .bannedbooks-article-1{
 	background-color: #F6F6F6;
 	justify-content:center;
 	align-items: center;
 	margin-top: 75px;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-gap: 0px;
+	grid-gap: 0;
 }
 	
 }
+
 .banned-books-description{
 	font-family: 'Courier New', Courier, monospace;
 	font-style: italic;
@@ -251,11 +266,12 @@ img {
 	justify-content: center;
 	align-items: center;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 	margin-right: 20%;
 	font-size: 20px;
 	}
 }
+
 .thumbnail {
     display: grid;
 	grid-template-columns: 1fr;  
@@ -264,16 +280,17 @@ img {
     padding: 5px; 
     margin: 10px; 
 	
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 		margin-left:20%;
 		}
 }
+
 .ultra-styled{
 	color:#C62025;
 	font-weight:bold;
 	font-size: 22px;
 	
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 	font-size: 25px;
 	}
 }
@@ -285,10 +302,10 @@ img {
 	align-items: center;
 	margin-top: 75px;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-gap: 0px;
+	grid-gap: 0;
 	}
 }
 
@@ -299,11 +316,12 @@ img {
 	justify-content: center;
 	align-items: center;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 	margin-right: 20%;
 	font-size: 20px;
 	}
 }
+
 .thumbnail {
     display: grid;
 	grid-template-columns: 1fr;  
@@ -312,48 +330,61 @@ img {
     padding: 5px; 
     margin: 10px; 
 	
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 		margin-left:20%;
 		}
 	}
-/*-------------------------end section---------------------------------*/
+
+/* -------------------------end section--------------------------------- */
 
 
 
-/*---------------------------end section---------------------------------*/
+/* ---------------------------end section--------------------------------- */
 
 
-/*---------------------------Library page---------------------------*/
-/*use grid and reference datalibrary*/
+/* ---------------------------Library page--------------------------- */
+
+/* use grid and reference datalibrary */
 
 .datalibrary {
 	background-color: white;
 	text-align: center;
 	list-style-type: none;
-	padding: 0px;
+	padding: 0;
 	display: grid; 
 	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
 	max-width: 700px;
 	gap: 50px;
-	@media (min-width: 1024px) {
+	align-self: stretch; 
+	align-items: center;
+	@media (width >= 748px) {
+		display: grid; 
+		grid-template-columns: repeat(3, 1fr);
 	}
+	@media (width >= 1024px) {
+		display: grid; 
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 1200px;
+	}
+
 
 }
 
 .librarytitle {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "Times";
+	font-family: Times;
 	display: grid; 
 	grid-gap: 10px;
 	justify-content: center;
 	color: white;
 	background-color:black;
-	margin-top: 0px;
+	margin-top: 0;
 	padding: 70px;
 	font-size: 45px;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 		font-size: 70px;
 		padding: 30px;
 	}
@@ -364,7 +395,7 @@ img {
 	display: block;
 	color: #000;
 	text-align: center;       
-	font-family: 'Inter', sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 700;
@@ -372,29 +403,23 @@ img {
 	padding: 5px;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
-	@media (min-width: 1024px) {
+
+	@media (width >= 1024px) {
 		font-size: 30px;
 	}
 	
-}
-
-.datalibrary{
-	display: grid;
-	align-content: center;
-	place-items: center;
-	@media (min-width: 760px) {
-		grid-template-columns:max-content;
-}
 }
 
 .list {
 	position: relative;
 	list-style: none;
 	padding: none;
-	@media (min-width: 760px) {
+
+	@media (width >= 760px) {
         justify-content: center;		
 }
-	@media (min-width: 1024px) {
+
+	@media (width >= 1024px) {
 	}
 
 }
@@ -403,8 +428,9 @@ img {
 	margin-top: 100px;
 
 }
+
 .card {
-	/*asked ChatGPT how to use absolute and relative positioning in CSS*/
+	/* asked ChatGPT how to use absolute and relative positioning in CSS */
 		border: 1px solid black;
 		position: absolute;
 		z-index: 2;
@@ -413,11 +439,13 @@ img {
 		width: 150px;
 		padding-bottom: 15%;
 		padding-top:15%;
-		@media (min-width: 760px) {
+
+		@media (width >= 760px) {
 			align-content: center;
 			width: 326px;
 	}
-		@media (min-width: 1024px) {
+
+		@media (width >= 1024px) {
 			align-content: center;
 			width: 326px;
 	}
@@ -430,9 +458,11 @@ img {
 	z-index: 1;
 	padding-bottom: 15%;
 	padding-top:15%;
-	@media (min-width: 748px) {
+
+	@media (width >= 748px) {
 	}
 }
+
 .list .card {
 	opacity: 0;
 	transition: all .3s ease-in;
@@ -441,6 +471,7 @@ img {
 .list:hover .card {
 	opacity: 1;
 }
+
 .results .card {
 	opacity: 1;
 	background-color: transparent;
@@ -449,17 +480,17 @@ img {
 
 }
 
-/*---------------------------end section---------------------------------*/
+/* ---------------------------end section--------------------------------- */
 
 
 
-/*---------------------------General SEARCH page---------------------------*/
+/* ---------------------------General SEARCH page--------------------------- */
 .searchpagebuttons{
 	background-image: url('/images/gianteye.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	opacity: 90%;
+	opacity: 0.9;
 	height: 100vh;	
 	padding-top: 100px;
 }
@@ -489,18 +520,20 @@ img {
 	  cursor: pointer;
 	  border: 3px solid;
 	  padding: 0.25em 0.5em;
-	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	  position: relative;
 	  user-select: none;
-	  -webkit-user-select: none;
+	  user-select: none;
 	  touch-action: manipulation;
 	}
-	@media (min-width: 768px) {
+
+	@media (width >= 768px) {
 		.fictionbutton{
 		  padding: 0.25em 0.75em;
 		  max-width: 40%;
 		}
 	  }
+
 .nonfictionbutton {
 	order: 2;
 	display: inline-block;
@@ -516,13 +549,14 @@ img {
 	cursor: pointer;
 	border: 3px solid;
 	padding: 0.25em 0.5em;
-	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	position: relative;
 	user-select: auto;
-	-webkit-user-select: none;
+	user-select: none;
 	touch-action: manipulation;
 }
-	@media (min-width: 768px) {
+
+	@media (width >= 768px) {
 		.nonfictionbutton{
 		padding: 0.25em 0.75em;
 		max-width: 40%;
@@ -544,13 +578,14 @@ img {
 		cursor: pointer;
 		border: 3px solid;
 		padding: 0.25em 0.5em;
-		box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+		box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 		position: relative;
 		user-select: auto;
-		-webkit-user-select: none;
+		user-select: none;
 		touch-action: manipulation;
 	}
-		@media (min-width: 768px) {
+
+		@media (width >= 768px) {
 			.searchhomebutton{
 			padding: 0.25em 0.75em;
 			max-width: 40%;
@@ -558,21 +593,21 @@ img {
 		}
 
 
-/*---------------------------end section---------------------------------*/
+/* ---------------------------end section--------------------------------- */
 
 
 
-/*---------------------------Fiction SEARCH page---------------------------*/
+/* ---------------------------Fiction SEARCH page--------------------------- */
 
 .search-content-container{
 	background-image: url('/images/gianteye-opacity50.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	opacity: 90%;
+	opacity: 0.9;
 	height: 200vh;
 
-	@media (min-width:748px) {
+	@media (width >=748px) {
 	height: 180vh;
 	}
 }
@@ -580,13 +615,13 @@ img {
 .search-heading {
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "Times";
+	font-family: Times;
 	display: grid; 
 	grid-gap: 10px;
 	justify-content: center;
 	color: white;
 	background-color:black;
-	margin-top: 0px;
+	margin-top: 0;
 	padding: 70px;
 	font-size: 35px;
 }
@@ -594,17 +629,18 @@ img {
 .searchtitle{
 	color:white;
 
-	@media (min-width: 748px) {
+	@media (width >= 748px) {
 		font-size: 70px;
 		padding: 30px;
 }
 }
+
 .searchsubtitle {
-	font-family :'Mermaid', sans-serif;
+	font-family :Mermaid, sans-serif;
 	font-size: 25px;
 	color: white;
 
-	@media (min-width:748px) {
+	@media (width >=748px) {
 		font-size: 25px;
 	}
 
@@ -620,17 +656,20 @@ img {
 	margin-left:30%;
 	font-family: 'Arial Black';
 	font-size: 22px;
-	@media (min-width:748px){
+
+	@media (width >=748px){
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 }
+
 .fictionboxes{
-	@media (min-width:748px){
+	@media (width >=748px){
 	flex: 0 0 calc(50% - 10px); 
 	}
 }
+
 	.fictionboxes input[type="checkbox"] {
 		display: none;
 		visibility: hidden;
@@ -646,7 +685,7 @@ img {
 		font-weight:bold;
 	}
 
-	.fictionboxes label:before {
+	.fictionboxes label::before {
 		box-sizing: border-box;
 		content: " ";
 		position: absolute;
@@ -660,11 +699,12 @@ img {
 		z-index: -1;
 	}
 
-	.fictionboxes input[type=checkbox]:checked + label {
+	.fictionboxes input[type="checkbox"]:checked + label {
 		padding-left: 1em;
 		color: #0f5229;
 	}
-	.fictionboxes input[type=checkbox]:checked + label:before {
+
+	.fictionboxes input[type="checkbox"]:checked + label::before {
 		top: 0;
 		width: 100%;
 		height: 2em;
@@ -676,7 +716,8 @@ img {
 	.fictionboxes label::before {
 		transition: 0.25s all ease;
 	}
-/* Foundational CSS for checkbox design courtesy of Raul Berrera, adjusted to fit our project*/
+
+/* Foundational CSS for checkbox design courtesy of Raul Berrera, adjusted to fit our project */
 
 .fictionendbuttons {
 		font-family:'Times New Roman', Times, serif;
@@ -703,13 +744,14 @@ img {
 	cursor: pointer;
 	border: 3px solid;
 	padding: 0.25em 0.5em;
-	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	position: relative;
 	user-select: none;
-	-webkit-user-select: none;
+	user-select: none;
 	touch-action: manipulation;
 	}
-	@media (min-width: 748px) {
+
+	@media (width >= 748px) {
 		.fictionhomebutton{
 		  padding: 0.25em 0.75em;
 		  max-width: 40%;
@@ -729,13 +771,14 @@ img {
 	cursor: pointer;
 	border: 3px solid;
 	padding: 0.25em 0.5em;
-	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	position: relative;
 	user-select: none;
-	-webkit-user-select: none;
+	user-select: none;
 	touch-action: manipulation;
 }
-	@media (min-width: 748px) {
+
+	@media (width >= 748px) {
 		.fictionresultbutton{
 		padding: 0.25em 0.75em;
 		max-width: 40%;
@@ -743,46 +786,50 @@ img {
 	}
 
 
-/*---------------------------end section---------------------------------*/
+/* ---------------------------end section--------------------------------- */
 
 
 
 
 
-/*---------------------------NF SEARCH page---------------------------*/
+/* ---------------------------NF SEARCH page--------------------------- */
 
 
 .nfsearchtitle {
 	flex-shrink: 0;
 	color: #DC3545;
 	text-align: center;
+
 /* font family issues, font won't change */
-	font-family: 'Inter', sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	margin: 0px;
+	margin: 0;
 	padding-top: 60px;
-	/*asked ChatGPT how to outline text in CSS*/
+
+	/* asked ChatGPT how to outline text in CSS */
 	text-shadow: 
-			-1px -1px 0 #ffffff, /* Top-left shadow */
-			1px -1px 0 #ffffff, /* Top-right shadow */
-			-1px 1px 0 #ffffff, /* Bottom-left shadow */
-			1px 1px 0 #ffffff; /* Bottom-right shadow */
+			-1px -1px 0 #fff, /* Top-left shadow */
+			1px -1px 0 #fff, /* Top-right shadow */
+			-1px 1px 0 #fff, /* Bottom-left shadow */
+			1px 1px 0 #fff; /* Bottom-right shadow */
+
 	background-color: black;
 		}
 
 .fnfsearchsubtitle {
-	font-family :'Mermaid', sans-serif;
+	font-family :Mermaid, sans-serif;
 	font-size: 25px;
 	color: black;
 		
 		
 }
+
 .nfboxes {
 	font-size: 25px;
-	font-family :'Mermaid', sans-serif;
+	font-family :Mermaid, sans-serif;
 	display: grid;
 	gap: 20px;
 	padding-top: 30px;
@@ -790,10 +837,9 @@ img {
 
 
 .nfboxes {
-	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	font-size: 25px;
-	font-family :'Baskerville', sans-serif;
+	font-family :Baskerville, sans-serif;
 	margin: 0;
 	display: flex;
 	align-items: center;
@@ -817,7 +863,7 @@ img {
 	display: inline-flex;
 }
 
-.nfboxes label:before {
+.nfboxes label::before {
 	box-sizing: border-box;
 	content: " ";
 	position: absolute;
@@ -831,11 +877,12 @@ img {
 	z-index: -1;
 }
 
-.nfboxes input[type=checkbox]:checked + label {
+.nfboxes input[type="checkbox"]:checked + label {
 	padding-left: 1em;
 	color: #0f5229;
 }
-.nfboxes input[type=checkbox]:checked + label:before {
+
+.nfboxes input[type="checkbox"]:checked + label::before {
 	top: 0;
 	width: 100%;
 	height: 2em;
@@ -847,24 +894,28 @@ img {
 .nfboxes label::before {
 	transition: 0.25s all ease;
 }
+
 .fictionsearchtitle {
 	flex-shrink: 0;
 	color: #DC3545;
 	text-align: center;
+
 /* font family issues, font won't change */
-	font-family: 'Inter', sans-serif;
+	font-family: Inter, sans-serif;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	margin: 0px;
+	margin: 0;
 	padding-top: 60px;
-	/*asked ChatGPT how to outline text in CSS*/
+
+	/* asked ChatGPT how to outline text in CSS */
 	text-shadow: 
-			-1px -1px 0 #ffffff, /* Top-left shadow */
-			1px -1px 0 #ffffff, /* Top-right shadow */
-			-1px 1px 0 #ffffff, /* Bottom-left shadow */
-			1px 1px 0 #ffffff; /* Bottom-right shadow */
+			-1px -1px 0 #fff, /* Top-left shadow */
+			1px -1px 0 #fff, /* Top-right shadow */
+			-1px 1px 0 #fff, /* Bottom-left shadow */
+			1px 1px 0 #fff; /* Bottom-right shadow */
+
 	background-color: black;
 		}
 
@@ -893,18 +944,20 @@ img {
 	  cursor: pointer;
 	  border: 3px solid;
 	  padding: 0.25em 0.5em;
-	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	  position: relative;
 	  user-select: none;
-	  -webkit-user-select: none;
+	  user-select: none;
 	  touch-action: manipulation;
 	}
-	@media (min-width: 768px) {
+
+	@media (width >= 768px) {
 		.fictionbutton{
 		  padding: 0.25em 0.75em;
 		  max-width: 40%;
 		}
 	  }
+
 .nfresultbutton {
 	order: 2;
 	display: inline-block;
@@ -919,13 +972,14 @@ img {
 	  cursor: pointer;
 	  border: 3px solid;
 	  padding: 0.25em 0.5em;
-	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	  position: relative;
 	  user-select: none;
-	  -webkit-user-select: none;
+	  user-select: none;
 	  touch-action: manipulation;
 	}
-	@media (min-width: 768px) {
+
+	@media (width >= 768px) {
 		.nfresultbutton{
 		  padding: 0.25em 0.75em;
 		  max-width: 40%;
@@ -933,7 +987,7 @@ img {
 	  }
 
 
-/*---------------------------Nonfiction Result page---------------------------*/
+/* ---------------------------Nonfiction Result page--------------------------- */
 
 .nfresultendbuttons {
 	font-family:'Times New Roman', Times, serif;
@@ -961,13 +1015,14 @@ img {
 	  cursor: pointer;
 	  border: 3px solid;
 	  padding: 0.25em 0.5em;
-	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	  position: relative;
 	  user-select: none;
-	  -webkit-user-select: none;
+	  user-select: none;
 	  touch-action: manipulation;
 	}
-	@media (min-width: 768px) {
+
+	@media (width >= 768px) {
 		.fictionbutton{
 		  padding: 0.25em 0.75em;
 		  max-width: 40%;
@@ -975,7 +1030,6 @@ img {
 	  }
 
 .nfresultlibrarybutton {
-
 	order: 2;
 	display: inline-block;
 	  font-family: "Open Sans", sans-serif;
@@ -989,20 +1043,21 @@ img {
 	  cursor: pointer;
 	  border: 3px solid;
 	  padding: 0.25em 0.5em;
-	  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	  box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 	  position: relative;
 	  user-select: none;
-	  -webkit-user-select: none;
+	  user-select: none;
 	  touch-action: manipulation;
 	}
-	@media (min-width: 768px) {
+
+	@media (width >= 768px) {
 		.fictionbutton{
 		  padding: 0.25em 0.75em;
 		  max-width: 40%;
 		}
 	  }
 
-/*---------------------------end section---------------------------------*/
+/* ---------------------------end section--------------------------------- */
 
 /* media queries
 @media (min-width: 760px) {
